@@ -6,18 +6,23 @@
     <body>
       <UpcycleSearch />
     </body>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
 <script>
 import TopNav from './components/TopNav.vue';
 import UpcycleSearch from './components/UpcycleSearch.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
     TopNav,
-    UpcycleSearch
+    UpcycleSearch,
+    Footer
   }
 }
 </script>
