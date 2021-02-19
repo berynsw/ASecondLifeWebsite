@@ -4,13 +4,19 @@
         <p class="text">Write your email and a message about your idea below</p>
         <input class="email" type="text" v-model="email" placeholder="Email..." />
         <input class="idea" type="text" v-model="idea" placeholder="Upcycle Idea..." />
-        <button class="submit" onclick="submitFunction()">Submit</button>
+        <button class="submit" v-on:click="submit">Submit</button>
     </main>
 </template>
 
 <script>
 export default {
-    name: "IdeaForm"
+    name: "IdeaForm",
+    methods:{
+        submit()
+        {
+            alert("Thank you for your upcycle idea!")
+        }
+    }
 }
 </script>
 

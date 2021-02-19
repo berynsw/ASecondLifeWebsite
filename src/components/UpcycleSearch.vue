@@ -1,17 +1,51 @@
 <template>
     <main>
-        <div class="name">A Second Life</div>
-        <input class="search" type="text" v-model="search" placeholder="🔍 What do you want to upcycle?" />
+        <div class="name">A <br> Second <br> Life</div>
+         <div class="rightBox">
+         <div id = 'dropdownlist' class="dropDown" >
+             <h1 class="boxHeading">Know what you want to <br> upcycle ?</h1>
+         </div>
+         <button @click="showText = !showText" class="boxButton">🔍 Search By Category</button>
+         
+         <div v-if="showText">
+            <button @click="showHello = !showHello" class="optionButton">Plastic</button>
+            <button @click="showHello = !showHello" class="optionButton">Metal</button>
+            <button @click="showHello = !showHello" class="optionButton">Wood</button>
+            
+
+         </div>
+         <h1 v-if="showHello">hello</h1>
+         </div>
+        <!-- <input class="search" type="text" v-model="search" placeholder="🔍 What do you want to upcycle?" /> -->
     </main>
 </template>
 
 <script>
+// import Vue from 'vue';
+// import { DropDownListPlugin } from '@syncfusion/ej2-vue-dropdowns';
+// Vue.use(DropDownListPlugin);
+
 export default {
-    name: "UpcycleSearch"
+    name: "UpcycleSearch",
+
+    data: function(){
+        return {
+            showText: false,
+            showHello: false,
+            // localData: [
+            //     {Id: 'upcycle1', Type: 'Plastic'},
+            //     {Id: 'upcycle2', Type: 'Metal'},
+            //     {Id: 'upcycle3', Type: 'Cloth'}
+            // ],
+            // localField: {value: 'Id', text: 'Type'}
+        }
+    }
+
 }
 </script>
 
 <style scoped>
+/* @import url(https://cdn.syncfusion.com/ej2/material.css); */
 main {
     width: 100vw;
     height: 600px;
@@ -21,7 +55,62 @@ main {
 main .name{
     font-size: 80pt;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 400px;
+    float: left;
+        
+}
+
+main .rightBox{
+    margin-top: 30px;
+    width: 550px;
+    height: 350px;
+    float: right;
+    background-color:rgb(245, 245, 220); 
+    position: relative;
+     box-shadow: 20px 20px #888888;
+}
+
+main .boxHeading {
+    position: absolute;
+    color:gray;
+    text-align: center;
+    top: 30%;
+    margin-left: 50px;
+
+    
+}
+main .boxButton{
+    width:450px;
+    height: 30px;
+    display: block;
+    margin-top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:gray;
+    color: honeydew;
+    font-weight: bold;
+    border: gray;
+}
+main .optionButton{
+    display:block;
+    width:450px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color:rgb(245, 245, 220); 
+    color:gray;
+    font-weight: bold;
+    border: rgb(245, 245, 220);
+}
+
+main .dropDown {
+
+    width:450px;
+    display: block;
+    margin-top: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:beige;
 }
 main .search{
     width: 550px;
