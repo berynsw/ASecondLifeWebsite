@@ -2,8 +2,8 @@
     <div>
         <UpcycleSearch />
         <div class="newUserSection">
+            <img src="url(${require('/assets/boots.jpg')})">
            <div class="name">New to Upcycling?</div>
-           <div class="img-boots"></div>
            <p class="text">Explore our mission and community. A Second Life is dedicated to reducing waste through simple upcycle projects. What's an upcycle? Don't know where to start? Learn more by clicking below.</p>
            <router-link class="NewUser" to="./newuserguide">New User Guide</router-link>
             <!-- <router-link class="menuItem" to="./">Home</router-link> -->
@@ -14,16 +14,20 @@
 
 <script>
 
-import UpcycleSearch from './UpcycleSearch.vue';
-import IdeaForm from './IdeaForm.vue';
+    import UpcycleSearch from './UpcycleSearch.vue';
+    import IdeaForm from './IdeaForm.vue';
+    //import boots from '@/assets/boots.jpg';
 
-export default {
-  name: 'Homepage',
-  components: {
-    UpcycleSearch,
-    IdeaForm,
-  }
-}
+    export default {
+        name: 'Homepage',
+        components: {
+            UpcycleSearch,
+            IdeaForm
+        }
+        // data : () => {
+        //     image: `url(${require('../assets/${this.picture}.jpeg');
+        // }
+    }
 </script>
 
 <style scoped>
