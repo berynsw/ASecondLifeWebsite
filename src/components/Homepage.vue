@@ -1,13 +1,13 @@
 <template>
     <div>
         <UpcycleSearch />
-        <body>
+        <div class="newUserSection">
            <div class="name">New to Upcycling?</div>
            <div class="img-boots"></div>
            <p class="text">Explore our mission and community. A Second Life is dedicated to reducing waste through simple upcycle projects. What's an upcycle? Don't know where to start? Learn more by clicking below.</p>
-           <button class="NewUser" v-on:click="NewUser">New User Guide</button>
-
-        </body>
+           <router-link class="NewUser" to="./newuserguide">New User Guide</router-link>
+            <!-- <router-link class="menuItem" to="./">Home</router-link> -->
+        </div>
         <IdeaForm />
     </div>
 </template>
@@ -27,11 +27,13 @@ export default {
 </script>
 
 <style scoped>
-body{
+.newUserSection {
     width: 100vw;
     height: 590px;
     padding: 50px 80px;
     background-color: #dad6ce;
+    /* background-color:rgb(245, 245, 220);  */
+    color: white;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
 }
@@ -61,8 +63,8 @@ body .NewUser{
     height: 40px;
     margin: 25px 0px;
     border-radius: 25px;
-    border: 5px solid transparent;
-    border-color: #777;
+    border: 5px solid;
+    border-color: rgb(73, 73, 73);
     font-size: 20pt;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -71,6 +73,9 @@ body .NewUser{
     bottom:7px;
     left: 100px;
     transition: 0.4s;
+    color: white;
+    background-color: grey;
+    text-decoration: none;
 }
 body .NewUser.active, 
 body .NewUser:hover{

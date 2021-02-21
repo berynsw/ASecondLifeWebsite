@@ -52,7 +52,7 @@ main .email{
     padding: 25px 0px;
     border-radius: 25px;
     border-color: #777;
-    box-shadow: -1px -1px #777;
+    /* box-shadow: -1px -1px #777; */
     font-size: 20pt;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -68,7 +68,8 @@ main .idea{
     padding: 25px 0px;
     border-radius: 25px;
     border-color: #777;
-    box-shadow: -1px -1px #777;
+    /* box-shadow: -1px -1px #777; */
+
     font-size: 20pt;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -83,7 +84,9 @@ main .submit{
     margin: 25px 0px;
     border-radius: 25px;
     border: 5px solid transparent;
-    border-color: #777;
+    border-color: rgb(73, 73, 73);
+    color: white;
+    background-color: grey;
     font-size: 20pt;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;

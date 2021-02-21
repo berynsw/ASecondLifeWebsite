@@ -49,14 +49,25 @@ nav .menuItem{
     padding: 5px 5px;
     position: relative;
     text-align: center;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
+    border-left: 4px solid transparent;
     display: flex;
     transition: 0.4s;
-}
-nav .menuItem a{
     color: white;
     text-decoration: none;
 }
+nav .menuItem.active, 
+nav .menuItem:hover{
+    border-bottom-color: #c58db7;
+    opacity: 90%;
+}
+
+nav .menuItem.active, 
+nav .menuItem:hover{
+    /* background-color: #555; */
+    border-left-color: #c58db7;
+    opacity: 90%;
+    color: black;
+}
+
 
 </style>
