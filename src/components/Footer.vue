@@ -2,11 +2,11 @@
     <main>
         <div class="name">A Second Life</div>
         <nav>
-            <div class="menuItem"><a href="#"></a>Home</div>
-            <div class="menuItem"><a href="#"></a>Explore</div>
-            <div class="menuItem"><a href="#"></a>Resources</div>
-            <div class="menuItem"><a href="#"></a>About</div>
-            <div class="menuItem"><a href="#"></a>Contact</div>
+            <router-link class="menuItem" to="./">Home</router-link>
+            <router-link class="menuItem" to="./explore">Explore</router-link>
+            <router-link class="menuItem" to="./resources">Resources</router-link>
+            <router-link class="menuItem" to="./about">About</router-link>
+            <router-link class="menuItem" to="./contact">Contact</router-link>
         </nav>
     </main>
 </template>
@@ -55,7 +55,7 @@ nav .menuItem{
     transition: 0.4s;
 }
 nav .menuItem a{
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 
