@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <header>
+      <TopNav />
+    </header>
+    <body>
+      <router-view></router-view>
+    </body>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
 <script>
+import TopNav from './components/TopNav.vue';
+import Footer from './components/Footer.vue';
 export default {
   name: 'App',
+  components: {
+    TopNav,
+    Footer
+  }
 }
 </script>
 
