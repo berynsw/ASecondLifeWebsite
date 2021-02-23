@@ -66,7 +66,7 @@ main .rightBox{
     float: right;
     background-color:rgb(245, 245, 220); 
     position: relative;
-     box-shadow: 20px 20px #888888;
+    box-shadow: 20px 20px #888888;
 }
 
 main .boxHeading {

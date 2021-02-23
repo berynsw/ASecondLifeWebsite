@@ -30,9 +30,9 @@
     width: 100vw;
     height: 590px;
     padding: 50px 80px;
-    background-color: #dad6ce;
+    background-color: rgb(245, 245, 220);
     /* background-color:rgb(245, 245, 220);  */
-    color: white;
+    color: rgb(25, 28, 46);
     font-family: 'Courier New', Courier, monospace;
     position: relative;
 }
@@ -73,7 +73,7 @@ body .NewUser{
     left: 100px;
     transition: 0.4s;
     color: white;
-    background-color: grey;
+    background-color: rgb(245, 245, 220);
     text-decoration: none;
 }
 body .NewUser.active, 
