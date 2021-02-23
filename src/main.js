@@ -4,6 +4,9 @@ import App from './App.vue';
 import About from './components/About.vue';
 import Homepage from './components/Homepage.vue';
 import NewUserGuide from './components/NewUserGuide.vue';
+
+//items
+import RubberBoots from './components/items/RubberBoots.vue';
 // import Plastic from './components/Plastic.vue';
 
 Vue.use(VueRouter);
@@ -11,7 +14,9 @@ Vue.use(VueRouter);
 const routes = [
   {path: '/', component: Homepage},
   {path: '/about', component: About},
-  {path: '/newuserguide', component: NewUserGuide}
+  {path: '/newuserguide', component: NewUserGuide},
+  {path: '/items/rubberboots', component: RubberBoots}
+
     // path: '/plastic', component: Plastic,
 ]
 
