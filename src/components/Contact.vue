@@ -19,9 +19,11 @@ export default {
 <style scoped>
  header {
     width: 100vw;
-    height: 600px;
+    height: 500px;
     padding: 50px 80px;
-    background-color: #8db7c5;
+    background-image: url("../assets/Rainbow.jpeg");
+    background-size: 1500px 600px;
+    position: relative;
 }
 header .name{
     font-size: 80pt;
@@ -29,6 +31,7 @@ header .name{
     float: left;
         
 }
+
 main {
     width: 100vw;
     height:100px;
