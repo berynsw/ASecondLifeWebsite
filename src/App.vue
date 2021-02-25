@@ -7,6 +7,7 @@
       <router-view></router-view>
     </body>
     <footer>
+      <IdeaForm />
       <Footer />
     </footer>
   </div>
@@ -14,11 +15,13 @@
 
 <script>
 import TopNav from './components/TopNav.vue';
+import IdeaForm from './components/IdeaForm.vue';
 import Footer from './components/Footer.vue';
 export default {
   name: 'App',
   components: {
     TopNav,
+    IdeaForm,
     Footer
   }
 }

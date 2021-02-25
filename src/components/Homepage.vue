@@ -2,25 +2,22 @@
     <div>
         <UpcycleSearch />
         <div class="newUserSection">
-            <img :src="require(`@/assets/boots.jpg`)">
+            <img :src="require(`@/assets/boots.jpg`)" width= '400' height= '500'>
             <div class="name">New to Upcycling?</div>
             <p class="text">Explore our mission and community. A Second Life is dedicated to reducing waste through simple upcycle projects. What's an upcycle? Don't know where to start? Learn more by clicking below.</p>
             <router-link class="NewUser" to="./newuserguide">New User Guide</router-link>
         </div>
-        <IdeaForm />
     </div>
 </template>
 
 <script>
 
     import UpcycleSearch from './UpcycleSearch.vue';
-    import IdeaForm from './IdeaForm.vue';
 
     export default {
         name: 'Homepage',
         components: {
             UpcycleSearch,
-            IdeaForm
         }
     }
 </script>
@@ -30,7 +27,7 @@
     width: 100vw;
     height: 590px;
     padding: 50px 80px;
-    background-color: rgb(245, 245, 220);
+    background-color: #FAF2EC;
     /* background-color:rgb(245, 245, 220);  */
     color: rgb(25, 28, 46);
     font-family: 'Courier New', Courier, monospace;
