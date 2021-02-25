@@ -6,7 +6,10 @@
         <main>
             <div class="subject">Contact Us</div>
         </main>
-            <p>insert map here</p>
+        <body>
+            <img :src="require(`@/assets/Map.png`)" class="map" width= '600' height= '400'>
+            <div class="text">Find us in Bellingham, Wa! <br> Email: ASecondLife@gmail.com</div>
+        </body>
     </div>
 </template>
 
@@ -40,14 +43,36 @@ main {
     position: relative;
 }
 main .subject{
-        font-size: 50pt;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        position: absolute;
-        left: 500px;
-        top: 10px;
+    font-size: 50pt;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: 500px;
+    top: 10px;
 }
-p{
-    color: black;
-    font-size: 25pt;
+body{
+    width: 100vw;
+    height: 500px;
+    background-color:#FAF2EC;
+    position: relative;
+}
+body .text{
+    font-size:20pt;
+    font-family: 'Courier New', Courier, monospace;
+    width: 600px;
+    padding: 50px 50px;
+    background-color:#8db7c5;
+    border-style: solid;
+    border-color:#48596C;
+    position: absolute;
+    top: 175px;
+    right: 100px;
+}
+body .map{
+    background-image: url("../assets/Map.png");
+    border-style: solid;
+    border-color:#48596C;
+    position: absolute;
+    top: 50px;
+    left:100px;
 }
 </style>
