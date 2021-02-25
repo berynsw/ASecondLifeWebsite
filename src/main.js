@@ -5,6 +5,7 @@ import About from './components/About.vue';
 import Homepage from './components/Homepage.vue';
 import NewUserGuide from './components/NewUserGuide.vue';
 import Contact from './components/Contact.vue'
+import Explore from './components/Explore.vue'
 
 //items
 import RubberBoots from './components/items/RubberBoots.vue';
@@ -17,7 +18,8 @@ const routes = [
   {path: '/about', component: About},
   {path: '/newuserguide', component: NewUserGuide},
   {path: '/items/rubberboots', component: RubberBoots},
-  {path: '/contact', component: Contact}
+  {path: '/contact', component: Contact},
+  {path: '/explore', component: Explore}
 
     // path: '/plastic', component: Plastic,
 ]
