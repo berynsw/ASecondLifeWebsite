@@ -2,7 +2,7 @@
     <div>
         <UpcycleSearch />
         <div class="newUserSection">
-            <img :src="require(`@/assets/boots.jpg`)" width= '400' height= '500'>
+            <img :src="require(`@/assets/boots.jpg`)" class="boots" width= '400' height= '500'>
             <div class="name">New to Upcycling?</div>
             <p class="text">Explore our mission and community. A Second Life is dedicated to reducing waste through simple upcycle projects. What's an upcycle? Don't know where to start? Learn more by clicking below.</p>
             <router-link class="NewUser" to="./newuserguide">New User Guide</router-link>
@@ -36,6 +36,7 @@
 body .name{
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #48596C;
     width: 800px;
     position: absolute;
     top: 50px;
@@ -43,16 +44,19 @@ body .name{
 }
 body .text{
     font-size: 30px;
+    color: #48596C;
     width: 500px;
     position: absolute;
     top: 160px;
     left: 100px;
 }
-body .img-boots{
+body .boots{
     background-image: url("../assets/boots.jpg");
     position: absolute;
-    top: 100px;
-    right:100px;
+    border-style: solid;
+    border-color:#48596C;
+    top: 50px;
+    right:150px;
 }
 body .NewUser{
     width: 300px;
@@ -60,22 +64,23 @@ body .NewUser{
     margin: 25px 0px;
     border-radius: 25px;
     border: 5px solid;
-    border-color: rgb(73, 73, 73);
+    border-color:#48596C;
     font-size: 20pt;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     opacity: 80%; 
     position: absolute;
-    bottom:7px;
+    bottom:20px;
     left: 100px;
     transition: 0.4s;
-    color: white;
+    color: #48596C;
     background-color: rgb(245, 245, 220);
     text-decoration: none;
 }
 body .NewUser.active, 
 body .NewUser:hover{
-    background-color: #555;
+    background-color: #48596C;
+    color: white;
     border-color: #c58db7;
     opacity: 90%;
 }

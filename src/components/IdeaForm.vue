@@ -98,7 +98,7 @@ main .submit{
 }
 main .submit.active, 
 main .submit:hover{
-    background-color: #555;
+    background-color: #48596C;
     border-color: #c58db7;
     opacity: 90%;
 }
