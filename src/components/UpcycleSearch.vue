@@ -5,19 +5,22 @@
          <div id = 'dropdownlist' class="dropDown" >
              <h1 class="boxHeading">Know what you want to <br> upcycle ?</h1>
          </div>
-         <button @click="showText = !showText" class="boxButton">🔍 Search By Category</button>
          
-         <div v-if="showText">
+         <router-link class="boxButton" to="./explore">Start Creating</router-link>
+         <!-- <button @click="showText = !showText" class="boxButton">🔍 Search By Category</button> -->
+         
+         <!-- <div v-if="showText">
             
-            <!-- obviously haven't formatted this correctly in the dropdown but wanted to see if it would work! -->
-            <router-link class="menuItem" to="./items/rubberboots">Rubber Boots</router-link>
+
+            <router-link class="menuItem" to="./MaterialCategories/Rubber/RubberBoots/RubberBootPlanter">Rubber Boots</router-link>
+            <router-link class="menuItem" to="./MaterialCategories/Rubber/RubberBoots/RubberBootPlanter">Rubber Boots</router-link>
             
             <button @click="showHello = !showHello" class="optionButton">Plastic</button>
             <button @click="showHello = !showHello" class="optionButton">Metal</button>
             <button @click="showHello = !showHello" class="optionButton">Wood</button>
             
 
-         </div>
+         </div> -->
          <h1 v-if="showHello">hello</h1>
          </div>
         <!-- <input class="search" type="text" v-model="search" placeholder="🔍 What do you want to upcycle?" /> -->
@@ -50,6 +53,7 @@ export default {
 
 <style scoped>
 /* @import url(https://cdn.syncfusion.com/ej2/material.css); */
+
 main {
     width: 100vw;
     height: 600px;
@@ -84,16 +88,29 @@ main .boxHeading {
 }
 main .boxButton{
     width:450px;
-    height: 30px;
+    height: 40px;
     display: block;
     margin-top: 45%;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid transparent;
+    border-radius: 25px;
     background-color:gray;
+    border-color: rgb(73, 73, 73);
     color: honeydew;
-    font-weight: bold;
-    border: gray;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
 }
+
+main .boxButton.active, 
+main .boxButton:hover{
+    background-color: #48596C;
+    border-color: #c58db7;
+    opacity: 90%;
+}
+
 main .optionButton{
     display:block;
     width:450px;

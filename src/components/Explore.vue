@@ -5,6 +5,8 @@
         </header>
         <main>
             <div class="subject">Explore Upcycles by Material</div>
+
+
         </main>
         <br>
         <div class='Pcontainer'>
@@ -52,6 +54,10 @@
             </div>
         </div>
         <br>
+            <test class="upcycleLinkTest">
+                I'm just putting a link here so I can test an upcycle:
+                <router-link class="boxButton" to="./MaterialCategories/Rubber/RubberBoots/RubberBootPlanter">Rubber Boot Planter</router-link>
+            </test>
     </div>
 </template>
 
@@ -74,6 +80,11 @@ export default {
 </script>
 
 <style scoped>
+test{
+    color:black;
+    font-size: 30pt;
+}
+
 header {
     width: 100vw;
     height: 600px;

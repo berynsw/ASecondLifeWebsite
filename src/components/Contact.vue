@@ -8,7 +8,7 @@
         </main>
         <body>
             <img :src="require(`@/assets/Map.png`)" class="map" width= '600' height= '400'>
-            <div class="text">Find us in Bellingham, Wa! <br> Email: ASecondLife@gmail.com</div>
+            <div class="text">Find us in Bellingham, Wa! <br/> Email: ASecondLife@gmail.com</div>
         </body>
     </div>
 </template>
