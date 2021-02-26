@@ -73,7 +73,7 @@ body .text{
     left: 100px;
 }
 body .field{
-    background-image: url("../assets/Field.jpeg");
+    /* background-image: url("../assets/Field.jpeg"); */
     position: absolute;
     border-style: solid;
     border-color:#48596C;

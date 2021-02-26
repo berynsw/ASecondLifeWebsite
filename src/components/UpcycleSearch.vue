@@ -10,7 +10,7 @@
          <div v-if="showText">
             
             <!-- obviously haven't formatted this correctly in the dropdown but wanted to see if it would work! -->
-            <router-link class="menuItem" to="./items/rubberboots">Rubber Boots</router-link>
+            <router-link class="menuItem" to="./MaterialCategories/Rubber/RubberBoots/RubberBootPlanter">Rubber Boots</router-link>
             
             <button @click="showHello = !showHello" class="optionButton">Plastic</button>
             <button @click="showHello = !showHello" class="optionButton">Metal</button>
