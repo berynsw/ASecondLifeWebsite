@@ -1,34 +1,35 @@
 <template>
-    <div>
-        <title>
+    <main>
+        <section class="title">
             Rubber Boot Planter
-        </title>
-        <grid>
-            <pic>
-                <img :src="require(`@/components/MaterialCategories/images/boots.jpg`)">
-                <info>
-                    <span style="font-weight:bold">Category: </span>Rubber
-                    <br/>
-                    <br/>
-                    <span style="font-weight:bold">Item: </span>Rubber Boot
-                    <br/>
-                    <br/>
-                    <span style="font-weight:bold">Environmental Impact: </span>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mag na aliqua. Ut enim ad minim veniam
-                    <br/>
-                    <br/>
-                    <span style="font-weight:bold">Supplies: </span>old rubber boot(s), potting soil, small outdoor plant
-
-                </info>
-            </pic>
-            <instructions>
-                <span style="font-weight:bold">Instructions: </span>
+        </section>
+        <section class="info">
+            <img :src="require(`@/components/MaterialCategories/images/boots.jpg`)">
+            <info>
+                <span style="font-weight:bold">Category: </span>Rubber
                 <br/>
                 <br/>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </instructions>
-        </grid>
+                <span style="font-weight:bold">Item: </span>Rubber Boot
+                <br/>
+                <br/>
+                <span style="font-weight:bold">Environmental Impact: </span>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore mag na aliqua. Ut enim ad minim veniam
+                <br/>
+                <br/>
+                <span style="font-weight:bold">Supplies: </span>old rubber boot(s), potting soil, small outdoor plant
+            </info>
+        </section>
+        <section class="instructions">
+            <br/>
+            <br/>
+            <br/>
+            <span style="font-weight:bold">Instructions: </span>
+            <br/>
+            <br/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </section>
 
-    </div>
+
+    </main>
 </template>
 
 <script>
@@ -39,31 +40,35 @@ export default {
 
 
 <style scoped>
-div{
-    color: black;
-}
-title{
-    font-size: 60pt; 
+main{
+    color: #48596C;
+    background-color: #FAF2EC;
 }
 
-grid{
-    display: grid;
-    font-size: 20pt;
+.title{
+    font-size: 60pt;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    margin-bottom: 40px;
 }
-/* 
-grid img{
-    
-    grid-area: 1/1 / span 1/ span 1;
+.info{
+    display:block;
+    font-size: 20pt; 
+    font-family: 'Courier New', Courier, monospace;
 }
-grid info{
-    grid-area: 1/2 / span 1/ span 1;
+.info img{
+    border-style: solid;
+    border-color:#48596C;
+    height: 500px;
+    float: left;
+    margin-right: 20px;
+
 }
-grid instructions{
-    grid-area: 2/1 / span1/ span 2;
-} */
-
-
-
+.instructions{
+    display: block;
+    height: 300px;
+    font-size: 20pt; 
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
 
