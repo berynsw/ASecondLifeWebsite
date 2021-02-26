@@ -5,6 +5,7 @@ import About from './components/About.vue';
 import Homepage from './components/Homepage.vue';
 import NewUserGuide from './components/NewUserGuide.vue';
 import Contact from './components/Contact.vue';
+import Explore from './components/Explore.vue';
 
 //upcycles
 import RubberBootPlanter from './components/MaterialCategories/Rubber/RubberBoots/RubberBootPlanter.vue';
@@ -15,6 +16,7 @@ const routes = [
   {path: '/about', component: About},
   {path: '/newuserguide', component: NewUserGuide},
   {path: '/contact', component: Contact},
+  {path: '/explore', component: Explore},
   
   
   //upcycles  
