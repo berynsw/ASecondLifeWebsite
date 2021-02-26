@@ -48,7 +48,8 @@ main{
 .title{
     font-size: 60pt;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .info{
     display:block;
