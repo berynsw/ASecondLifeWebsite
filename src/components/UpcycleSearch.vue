@@ -93,14 +93,14 @@ main .boxButton{
     margin-top: 45%;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid transparent;
+    border-radius: 25px;
     background-color:gray;
+    border-color: rgb(73, 73, 73);
     color: honeydew;
-    border: gray;
     text-align: center;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    border: 5px solid transparent;
-    border-color: rgb(73, 73, 73);
     font-size: 20pt;
 }
 
