@@ -93,15 +93,14 @@ header {
     width: 100vw;
     height: 600px;
     padding: 50px 80px;
-    background-image: url("../assets/worktable.jpg");
-    background-size: 1440px 810px;
+    background-image: url("../assets/Garden.jpeg");
+    background-size: 1440px 960px;
     position: relative;
 }
 header .name{
     font-size: 100pt;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     float: left;
-    color:#48596C;
 }
 main {
     width: 100vw;
