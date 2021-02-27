@@ -23,7 +23,7 @@
                     <p class="text">Our Mission is to educate, inspire, and encourage upcycling in order to take steps towards a more sustainable life, and a cleaner planet Earth.</p>
                 </div>
                 <div class="section-right-img">
-                    <!-- <img :src="require(`@/assets/flowers.jpeg`)" class="imgShadow" width= '500' height= '500'> -->
+                    <img :src="require(`@/assets/flowers.jpeg`)" class="imgShadow" width= '500' height= '500'>
                 </div>
             </section>
             <section>
@@ -32,7 +32,7 @@
                     <p class="text">A Second Life upcycle website was dreamed up by Keili a student from Western Washington University. With the help of group mates Ashima, Beryn and Katie, A Seconf Life was brought to life, sharing ideas of upcycles and helping to educate the public on the importance of sustainability.</p>
                 </div>
                 <div class="section-left-img">
-                    <!-- <img :src="require(`@/assets/home.jpeg`)" class="imgShadow" width= '500' height= '600'> -->
+                    <img :src="require(`@/assets/home.jpeg`)" class="imgShadow" width= '500' height= '600'>
                 </div>
             </section>
              <section>
@@ -43,7 +43,7 @@
                     </p>
                 </div>
                 <div class="section-right-img">
-                    <!-- <img :src="require(`@/assets/bag.jpeg`)" class="imgShadow" width= '500' height= '500'> -->
+                    <img :src="require(`@/assets/bag.jpeg`)" class="imgShadow" width= '500' height= '500'>
                 </div>
             </section>
              
