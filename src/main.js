@@ -8,7 +8,9 @@ import Contact from './components/Contact.vue';
 import Explore from './components/Explore.vue';
 
 //upcycles
-import RubberBootPlanter from './components/MaterialCategories/Rubber/RubberBoots/RubberBootPlanter.vue';
+import RubberBootPlanter from './components/RubberBootPlanter.vue';
+import RubberBootBirdhouse from './components/RubberBootPlanter.vue';
+import CakePanSucculentGarden from './components/CakePanSucculentGarden.vue';
 
 Vue.use(VueRouter);
 const routes = [
@@ -20,8 +22,9 @@ const routes = [
   
   
   //upcycles  
-  {path: '/MaterialCategories/Rubber/RubberBoots/RubberBootPlanter', component: RubberBootPlanter}
-
+  {path: '/rubberbootplanter', component: RubberBootPlanter},
+  {path: '/rubberbootbirdhouse', component: RubberBootBirdhouse},
+  {path: '/cakepansucculentgarden', component: CakePanSucculentGarden}
 
 ]
 
