@@ -57,7 +57,7 @@
 
             <test class="upcycleLinkTest">
                 I'm just putting a link here so I can test an upcycle:
-                <router-link class="boxButton" to="./components/rubberbootplanter">Rubber Boot Planter</router-link>
+                <router-link class="boxButton" to="./rubberbootplanter">Rubber Boot Planter</router-link>
             </test>
     </div>
 </template>
