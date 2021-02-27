@@ -73,8 +73,9 @@ body .NewUser{
     bottom:20px;
     left: 100px;
     transition: 0.4s;
-    color: #48596C;
-    background-color: rgb(245, 245, 220);
+    color: #FAF2EC;
+    background-color: grey;
+
     text-decoration: none;
 }
 body .NewUser.active, 
