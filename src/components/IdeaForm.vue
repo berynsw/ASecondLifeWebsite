@@ -25,7 +25,7 @@ main{
     width: 100vw;
     height: 590px;
     padding: 50px 80px;
-    background-color: #8dc59b;
+    background-color: #a3ceae;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
 }
