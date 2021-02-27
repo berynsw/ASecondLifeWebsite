@@ -75,7 +75,6 @@ body .NewUser{
     transition: 0.4s;
     color: #FAF2EC;
     background-color: grey;
-
     text-decoration: none;
 }
 body .NewUser.active, 
