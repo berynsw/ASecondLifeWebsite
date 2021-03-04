@@ -10,6 +10,7 @@
   "dependencies": {
     "@syncfusion/ej2-vue-dropdowns": "^18.4.44",
     "core-js": "^3.6.5",
+    "json-server": "^0.16.3",
     "vue": "^2.6.12",
     "vue-router": "^3.5.1"
   },

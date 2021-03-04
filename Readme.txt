@@ -10,3 +10,7 @@ Instructions for running the code :
 6.  Compiles and hot-reloads for development
 	npm run serve
 This should open up localhost:8080 and you should see the website running.
+
+might need to add
+	npm install json-server
+	npx json-server --watch src/assets/upcycleData.json

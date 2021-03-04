@@ -1,6 +1,20 @@
 <template>
   <div id="app">
+
     <header>
+      
+      <!-- this is how you pass props from the json data to the upcycle template -->
+      <UpcycleTemplate 
+        :upcycleName=upcycles[0].upcycleName
+        :imageName=upcycles[0].imageName
+        :category=upcycles[0].category
+        :itemName=upcycles[0].itemName
+        :environmentalImpact=upcycles[0].environmentalImpact
+        :supplies=upcycles[0].supplies
+        :instructions=upcycles[0].instructions
+      />
+
+
       <TopNav />
     </header>
     <body>
@@ -9,6 +23,7 @@
     <footer>
       <IdeaForm />
       <Footer />
+
     </footer>
   </div>
 </template>
@@ -17,13 +32,36 @@
 import TopNav from './components/TopNav.vue';
 import IdeaForm from './components/IdeaForm.vue';
 import Footer from './components/Footer.vue';
+
+//temporary
+import UpcycleTemplate from './components/UpcycleTemplate.vue';
+
+
 export default {
   name: 'App',
   components: {
     TopNav,
     IdeaForm,
-    Footer
+    Footer, 
+
+    //temporary
+    UpcycleTemplate
+  },
+  
+  //temporarily here
+  //this is how we get the json data file
+  data: function(){
+    return {
+      upcycles: []
+    };
+  },
+  mounted(){
+    fetch('http://localhost:3000/upcycles')
+      .then(response => response.json())
+      .then(data => this.upcycles = data)
+      .catch(err => console.log(err.message))
   }
+
 }
 </script>
 

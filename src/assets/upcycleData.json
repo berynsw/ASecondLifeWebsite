@@ -1,0 +1,41 @@
+{
+    "upcycles": [
+        {
+            "upcycleName"           :"Dog Treat Dispenser",
+            "category"              :"Plastic",
+            "itemName"              :"Water Bottle",
+            "imageName"             :"dogTreatDispenser.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Mini-Trashbag liner", 
+            "category"              :"Plastic",
+            "itemName"              :"Grocery Bag",
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Storage", 
+            "category"              :"Plastic",
+            "itemName"              :"Grocery Bag",
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Emergency Sick Bag",
+            "category"              :"Plastic",
+            "itemName"              :"Grocery Bag", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        }
+    ]
+}
+

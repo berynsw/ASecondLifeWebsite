@@ -8,11 +8,13 @@ import Contact from './components/Contact.vue';
 import Explore from './components/Explore.vue';
 
 //upcycles
+import UpcycleTemplate from './components/UpcycleTemplate.vue';
 import RubberBootPlanter from './components/RubberBootPlanter.vue';
 import RubberBootBirdhouse from './components/RubberBootPlanter.vue';
 import CakePanSucculentGarden from './components/CakePanSucculentGarden.vue';
 
 Vue.use(VueRouter);
+
 const routes = [
   {path: '/', component: Homepage},
   {path: '/about', component: About},
@@ -21,13 +23,13 @@ const routes = [
   {path: '/explore', component: Explore},
   
   
-  //upcycles  
+  //upcycles
+  {path: '/upcycletemplate', component: UpcycleTemplate},
   {path: '/rubberbootplanter', component: RubberBootPlanter},
   {path: '/rubberbootbirdhouse', component: RubberBootBirdhouse},
   {path: '/cakepansucculentgarden', component: CakePanSucculentGarden}
 
 ]
-
 const router = new VueRouter({
   mode: 'history',
   routes
@@ -38,6 +40,6 @@ const router = new VueRouter({
 Vue.config.productionTip = false
 
 new Vue({
-  router:router,
+  router,
   render: h => h(App),
 }).$mount('#app')
