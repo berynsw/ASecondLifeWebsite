@@ -35,6 +35,78 @@
             "environmentalImpact"   :"Probably bad",
             "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
             "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Shoe Travel",
+            "category"              :"Plastic",
+            "itemName"              :"Grocery Bag", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Pet Waste Cleanup",
+            "category"              :"Plastic",
+            "itemName"              :"Grocery Bag", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Yarn for Crocheting",
+            "category"              :"Plastic",
+            "itemName"              :"Grocery Bag", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Mini Survival Kit",
+            "category"              :"Plastic",
+            "itemName"              :"Prescription Bottle", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Plastic Grocery Bag Storage",
+            "category"              :"Plastic",
+            "itemName"              :"Clorox Wipes Container", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Mosaic Resin Tray",
+            "category"              :"Plastic",
+            "itemName"              :"CD/DVD", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Bag Seal",
+            "category"              :"Plastic",
+            "itemName"              :"Twist Ties", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"Wire Organizer",
+            "category"              :"Plastic",
+            "itemName"              :"Twist Ties", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
         }
     ]
 }
