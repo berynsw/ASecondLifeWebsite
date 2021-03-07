@@ -1,21 +1,21 @@
 <template>
     <main>
         <section class="title">
-            {{upcycleName}}
+            {{ $route.params.name }}
         </section>
         <section class="info">
-            <img :src="require(`@/assets/${imageName}`)">
+            <img :src="require(`@/assets/${upcycle.imageName}`)">
             <info>
-                <span style="font-weight:bold">Category: </span>{{category}}
+                <span style="font-weight:bold">Category: </span>{{upcycle.category}}
                 <br/>
                 <br/>
-                <span style="font-weight:bold">Item: </span>{{itemName}}
+                <span style="font-weight:bold">Item: </span>{{upcycle.itemName}}
                 <br/>
                 <br/>
-                <span style="font-weight:bold">Environmental Impact: </span>{{environmentalImpact}}
+                <span style="font-weight:bold">Environmental Impact: </span>{{upcycle.environmentalImpact}}
                 <br/>
                 <br/>
-                <span style="font-weight:bold">Supplies: </span>{{supplies}}
+                <span style="font-weight:bold">Supplies: </span>{{upcycle.supplies}}
             </info>
         </section>
         <section class="instructions">
@@ -24,7 +24,7 @@
             <span style="font-weight:bold">Instructions: </span>
             <br/>
             <br/>
-            {{instructions}}
+            {{upcycle.instructions}}
         </section>
 
 
@@ -33,16 +33,24 @@
 
 <script>
 export default {
-  name: 'UpcycleTemplate',
-  props: [
-    'upcycleName',
-    'imageName',
-    'category',
-    'itemName',
-    'environmentalImpact',
-    'supplies',
-    'instructions'
-  ]
+    name: 'UpcycleTemplate',
+    data () {
+        return {
+            upcycle: {}
+        }
+    },
+    mounted(){
+        fetch('http://localhost:3000/upcycles')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(d => {
+                if(d.upcycleName == this.$route.params.name){
+                    this.upcycle = d;
+                }
+            })
+        })
+        .catch(err => console.log(err.message))
+    }
 }
 </script>
 

@@ -9,9 +9,7 @@ import Explore from './components/Explore.vue';
 
 //upcycles
 import UpcycleTemplate from './components/UpcycleTemplate.vue';
-import RubberBootPlanter from './components/RubberBootPlanter.vue';
-import RubberBootBirdhouse from './components/RubberBootPlanter.vue';
-import CakePanSucculentGarden from './components/CakePanSucculentGarden.vue';
+
 
 Vue.use(VueRouter);
 
@@ -23,11 +21,12 @@ const routes = [
   {path: '/explore', component: Explore},
   
   
+
   //upcycles
-  {path: '/upcycletemplate', component: UpcycleTemplate},
-  {path: '/rubberbootplanter', component: RubberBootPlanter},
-  {path: '/rubberbootbirdhouse', component: RubberBootBirdhouse},
-  {path: '/cakepansucculentgarden', component: CakePanSucculentGarden}
+  {
+    path: '/:name', 
+    component: UpcycleTemplate
+  }
 
 ]
 const router = new VueRouter({

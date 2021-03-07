@@ -96,8 +96,8 @@
             "itemName"              :"Twist Ties", 
             "imageName"             :"boots.jpg",
             "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "supplies"              :"Twist ties and your bag of choice",
+            "instructions"          :"Simply twist tie around the end of the bag."
         },
         {
             "upcycleName"           :"Wire Organizer",
@@ -107,7 +107,17 @@
             "environmentalImpact"   :"Probably bad",
             "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
             "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+        },
+        {
+            "upcycleName"           :"shouldnt show up",
+            "category"              :"rubber",
+            "itemName"              :"Twist Ties", 
+            "imageName"             :"boots.jpg",
+            "environmentalImpact"   :"Probably bad",
+            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
+            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
         }
+        
     ]
 }
 
