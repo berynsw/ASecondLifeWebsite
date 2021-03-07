@@ -7,10 +7,13 @@ Instructions for running the code :
 4. Then
 	npm install vue
 5. This command should install all the node modules that are required to run vue.js. 
-6.  Compiles and hot-reloads for development
+6. npm install json-server
+7. In one terminal
+	npx json-server --watch src/assets/upcycleData.json
+This will deliver the upcycleData.json file to the webpage
+8. Compiles and hot-reloads for development
 	npm run serve
 This should open up localhost:8080 and you should see the website running.
 
-might need to add
-	npm install json-server
-	npx json-server --watch src/assets/upcycleData.json
+	
+	
