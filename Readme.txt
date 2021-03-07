@@ -10,7 +10,7 @@ Instructions for running the code :
 6. npm install json-server
 7. In one terminal
 	npx json-server --watch src/assets/upcycleData.json
-This will deliver the upcycleData.json file to the webpage
+This will host the upcycleData.json file on http://localhost:3000/upcycles so that the webpage can access it.
 8. Compiles and hot-reloads for development
 	npm run serve
 This should open up localhost:8080 and you should see the website running.
