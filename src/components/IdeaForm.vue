@@ -1,10 +1,20 @@
 <template>
     <main>
-        <div class="name">Got an Upcycle Idea to Share?</div>
-        <p class="text">Write your email and a message about your idea below</p>
-        <input class="email" type="text" v-model="email" placeholder="Email..." />
-        <input class="idea" type="text" v-model="idea" placeholder="Upcycle Idea..." />
-        <button class="submit" v-on:click="submit">Submit</button>
+        <section>
+            <p class="name">Got an Upcycle Idea to Share?</p>
+            <p class="text">Write your email and a message about your idea below</p>
+        </section>
+        
+        
+        <section>
+            <input class="email" type="text" v-model="email" placeholder="Email..." />
+        </section>
+        <section>
+            <input class="idea" type="text" v-model="idea" placeholder="Upcycle Idea..." />
+        </section>
+        <section>
+            <button class="submit" v-on:click="submit">Submit</button>
+        </section>
     </main>
 </template>
 
@@ -21,35 +31,33 @@ export default {
 </script>
 
 <style scoped>
-main{
-    width: 100vw;
-    height: 590px;
-    padding: 50px 80px;
+main {
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: #a3ceae;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
+    display: block;
+
+
 }
 main .name{
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 800px;
-    position: absolute;
-    top: 50px;
-    left: 400px;
+    display: table;
+    margin: 0 auto;
+
 }
 main .text{
     font-size: 30px;
-    width: 1000px;
-    position: absolute;
-    top: 125px;
-    left: 225px;
-
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 2%;
 }
 main .email{
-    width: 550px;
+    width: 32%;
     height: 40px;
-    margin: 25px 0px;
-    padding: 25px 0px;
+
     border-radius: 25px;
     border-color: #777;
     /* box-shadow: -1px -1px #777; */
@@ -57,15 +65,16 @@ main .email{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     opacity: 80%; 
-    position: absolute;
-    top:200px;
-    left: 400px;
+    display: table;
+    margin: 0 auto;
+
+
 }
 main .idea{
-    width: 550px;
+    width: 32%;
     height: 200px;
-    margin: 25px 0px;
-    padding: 25px 0px;
+
+
     border-radius: 25px;
     border-color: #777;
     /* box-shadow: -1px -1px #777; */
@@ -74,14 +83,14 @@ main .idea{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     opacity: 80%; 
-    position: absolute;
-    top: 260px;
-    left: 400px;
+
+    display: table;
+    margin: 0 auto;
 }
 main .submit{
-    width: 150px;
-    height: 40px;
-    margin: 25px 0px;
+    width: 10%;
+    height: 5%;
+
     border-radius: 25px;
     border: 5px solid transparent;
     border-color: rgb(73, 73, 73);
@@ -91,9 +100,10 @@ main .submit{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     opacity: 80%; 
-    position: absolute;
-    bottom:7px;
-    left: 597px;
+
+    display: table;
+    margin: 0 auto;
+
     transition: 0.4s;
 }
 main .submit.active, 

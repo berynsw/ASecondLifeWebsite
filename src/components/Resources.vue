@@ -84,7 +84,7 @@ test{
 }
 
 .background{
-      background-image: url("../assets/nycshopping.jpg");
+     background-image: url("../assets/nycshopping.jpg");
      opacity: 0.85;
      background-size: cover;
      background-position: center center;

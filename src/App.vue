@@ -5,9 +5,9 @@
     </header>
     <body>
       <router-view></router-view>
+      <IdeaForm />
     </body>
     <footer>
-      <IdeaForm />
       <Footer />
     </footer>
   </div>
@@ -29,6 +29,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,6 +39,7 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  align-content: center;
 }
 * {
   margin: 0;

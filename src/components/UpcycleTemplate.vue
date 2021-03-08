@@ -59,6 +59,8 @@ export default {
 main{
     color: #48596C;
     background-color: #FAF2EC;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .title{
