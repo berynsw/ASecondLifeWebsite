@@ -27,11 +27,15 @@
             </div>
             <div class="resourceBox">
                 <ul class="ul">
-                    <li>Habitat for Humanity</li> 
-                    <li>The Salvation Army</li> 
-                    <li>Goodwill</li> 
-                    <li>The Furniture Bank Network</li> 
-                    <li>Pickup Please</li>
+                    <a href="https://www.habitat.org/restores/donate-goods" target="_blank">Habitat for Humanity</a> 
+                    <br>
+                    <a href="https://www.salvationarmyusa.org/usn/ways-to-give/" target="_blank">The Salvation Army</a> 
+                    <br>
+                    <a href="https://www.goodwill.org/donate/donate-stuff/" target="_blank">Goodwill</a> 
+                    <br>
+                    <a href="https://furniturebanks.org/" target="_blank">The Furniture Bank Network</a> 
+                    <br>
+                    <a href="https://pickupplease.org/" target="_blank"> Pickup Please</a>
                 </ul>
 
             </div>
@@ -48,11 +52,15 @@
             </div>
             <div class="resourceBox">
                 <ul class="ul">
-                    <li>FD Market</li> 
-                    <li>TerraCycle x Garnier</li> 
-                    <li>Green Toys</li> 
-                    <li>All Birds</li> 
-                    <li>Lush</li>
+                    <a href="https://fdmarketco.com/" target="_blank">FD Market</a> 
+                    <br>
+                    <a href="https://www.terracycle.com/en-US/" target="_blank">TerraCycle x Garnier</a> 
+                    <br>
+                    <a href="https://www.greentoys.com/" target="_blank">Green Toys</a> 
+                    <br>
+                    <a href="https://www.allbirds.com/" target="_blank">All Birds</a> 
+                    <br>
+                    <a href="https://uk.lush.com/article/our-environmental-policy" target="_blank">Lush</a>
                 </ul>
 
             </div>
@@ -135,6 +143,7 @@ body{
 
 .ul{
     display: block;
+    width: 60%;
     font-size: 2em;
     padding: 46px;
     line-height: 1.8em;
