@@ -149,6 +149,12 @@ body{
     line-height: 1.8em;
     font-family: 'Karla';
 }
-
+a:link , a:visited{
+    color:white;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color:rgb(90, 103, 117);
+}
 
 </style>
