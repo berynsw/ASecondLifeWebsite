@@ -1,6 +1,14 @@
 <template>
     <main>
-        <div class="name">A <br> Second <br> Life</div>
+        <!-- <div class="name">A <br> Second <br> Life</div> -->
+         <div class="background">
+         
+          <div class="banner-content">
+            
+            A <br> Second <br> Life
+            
+        </div>
+        
          <div class="rightBox">
          <div id = 'dropdownlist' class="dropDown" >
              <h1 class="boxHeading">Know what you want to <br> upcycle ?</h1>
@@ -23,6 +31,7 @@
          </div> -->
          <h1 v-if="showHello">hello</h1>
          </div>
+        </div>
         <!-- <input class="search" type="text" v-model="search" placeholder="🔍 What do you want to upcycle?" /> -->
     </main>
 </template>
@@ -53,8 +62,25 @@ export default {
 
 <style scoped>
 /* @import url(https://cdn.syncfusion.com/ej2/material.css); */
-
-main {
+.background{
+      background-image: url("../assets/homemadePaper.jpg");
+     opacity: 0.8;
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     
+}
+.banner-content {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  font-size: 100pt;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* main {
     width: 100vw;
     height: 600px;
     padding: 50px 80px;
@@ -65,16 +91,21 @@ main .name{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     float: left;
         
-}
+} */
 
 main .rightBox{
-    margin-top: 30px;
+    margin-top: 7%;
     width: 550px;
     height: 350px;
     float: right;
+    margin-left: 55%;
     background-color: #FAF2EC;
     position: relative;
     box-shadow: 20px 20px #888888;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 main .boxHeading {
@@ -82,7 +113,7 @@ main .boxHeading {
     color:gray;
     text-align: center;
     top: 30%;
-    margin-left: 50px;
+    margin-left: 25px;
 
     
 }
@@ -93,15 +124,18 @@ main .boxButton{
     margin-top: 45%;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid transparent;
-    border-radius: 25px;
-    background-color:gray;
-    border-color: rgb(73, 73, 73);
-    color: honeydew;
+    background-color:#FAF2EC;
+    border: 3px solid gray;
+    color:gray;
     text-align: center;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20pt;
+}
+main .boxButton:hover {
+  background-color: #555555;
+  color: white;
+ 
 }
 
 main .boxButton.active, 
