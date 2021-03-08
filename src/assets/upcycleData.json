@@ -10,7 +10,7 @@
             "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
         },
         {
-            "upcycleName"           :"Mini-Trashbag liner", 
+            "upcycleName"           :"Mini-Trashbag Liner", 
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag",
             "imageName"             :"boots.jpg",
@@ -109,13 +109,13 @@
             "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
         },
         {
-            "upcycleName"           :"shouldnt show up",
-            "category"              :"rubber",
-            "itemName"              :"Twist Ties", 
-            "imageName"             :"boots.jpg",
+            "upcycleName"           :"Cake Pan Succulent Garden",
+            "category"              :"Tin",
+            "itemName"              :"Cake Pan", 
+            "imageName"             :"cakePanSucculentGarden.jpg",
             "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "supplies"              :"Old tin cakepan and your favorite small succulent plants",
+            "instructions"          :"Fill cake pan with soil and plant succulents inside."
         }
         
     ]
