@@ -1,63 +1,95 @@
 <template>
   <div class='container'>
-    <div id='dropdown_Items'>
-        <ejs-dropdownlist ref='itemInstance' :dataSource='ItemData' 
-          :fields='Itemfields' :change='onItemChange' 
-          placeholder='Select a Tin Item'>
+      <div class='upcycles'>
+        
+        <!-- dropdown list of all the upcycles in the category -->
+        <!-- unique link sends current upcycle selected in dropdown to the upcycle template! -->
+        <ejs-dropdownlist 
+          class="dropdown"
+          :dataSource='upcycles' 
+          :fields='fields'
+          placeholder='Select a tin upcycle'
+          v-model='routeName'
+          :change='enableCreateButton'
+        >
         </ejs-dropdownlist>
-      <div id='dropDown_Upcycles' style="padding-top:20px;">
-          <ejs-dropdownlist ref='Upcycles' :query='childDataQuery' 
-            :dataSource='UpcycleData' :fields='Upcyclefields' :to='link'
-            :enabled='Upcycleenabled' placeholder='Select an Upcycle'>
-          </ejs-dropdownlist>
-        </div>
-    </div>
+        <router-link class="linkButton" v-if='var1' :to="`./${routeName}`">Create</router-link>
+
+      </div>
   </div>
 </template>
 <script>
-import Vue from 'vue';
-import { DropDownListPlugin } from "@syncfusion/ej2-vue-dropdowns";
-Vue.use(DropDownListPlugin);
-import { Query } from '@syncfusion/ej2-data';
+  import Vue from 'vue';
+  import { DropDownListPlugin } from "@syncfusion/ej2-vue-dropdowns";
+  Vue.use(DropDownListPlugin);
 
-export default Vue.extend({
-  name: 'TinDD',
-  data () {
-    return {
-      ItemData: [
-        { ItemName: 'Tin can', ItemId: '1' },
-        { ItemName: 'Cake pan', ItemId: '2' }
-      ],
-      UpcycleData: [
-        { UpcycleName: 'Candle Votive ', ItemId: '1', UpcycleId: '201', link:'./' },
-        { UpcycleName: 'Camping grill', ItemId: '1', UpcycleId: '202', link:'./' },
-        { UpcycleName: 'Pencil Holder ', ItemId: '1', UpcycleId: '203', link:'./' },
-        { UpcycleName: 'Succulent Garden ', ItemId: '2', UpcycleId: '204', link:'./cakepansucculentgarden' },
-      ],
-      Itemfields : { value: 'ItemId', text: 'ItemName' },
-      Upcyclefields : { value: 'UpcycleId', text: 'UpcycleName' },
-      Upcycleenabled : false,
-      childDataQuery: null,
-      link:'link'
+  export default Vue.extend({
+    name: 'TinDD',
+    data () {
+      return {
+        upcycles: [],
+        fields : { text: 'upcycleName', value: 'upcycleName'},
+        routeName: null,
+        var1: false
+      }
+    },
+    methods: {
+      enableCreateButton: function(){
+        this.var1 = true;
+      }
+    },
+    mounted(){
+      fetch('http://localhost:3000/upcycles')
+        .then(response => response.json())
+        .then(data => {
+          this.upcycles = data.filter(d => d.category == "Tin");
+        })
+        .catch(err => console.log(err.message))
     }
-  },
-  methods: {
-        onItemChange: function(e) {
-            this.childDataQuery = new Query().where('ItemId', 'equal', e.value);
-            this.Upcycleenabled = true;
-        },
-    }
-});
+  });
+
 </script>
 <style>
+
 @import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
 @import "../../node_modules/@syncfusion/ej2-inputs/styles/material.css";
 @import "../../node_modules/@syncfusion/ej2-vue-dropdowns/styles/material.css";
-div .container{
-  width: 400px;
-  height:100px;
+
+.container{
   background-color: #FAF2EC;
   border-style: solid;
   border-color:#48596C;
+  color: black;
+  height: 500px;
+}
+
+/* can't edit style on the dropdown?? why? */
+.dropdown{
+  font-family: 'Courier New', Courier, monospace;
+  background-color:rgb(173, 173, 173);
+  color: black;
+}
+
+/* can't change size of create button?? */
+.linkButton{
+  text-decoration: none;
+  color: black;
+  border: 5px solid transparent;
+
+  background-color:rgb(173, 173, 173);
+  border-color: rgb(73, 73, 73);
+  position: relative;
+  font-size: 10pt;
+  text-align: center;
+  width: 700px; 
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.linkButton.active, 
+.linkButton:hover{
+    background-color: #48596C;
+    border-color: #c58db7;
+    opacity: 90%;
 }
 </style>
