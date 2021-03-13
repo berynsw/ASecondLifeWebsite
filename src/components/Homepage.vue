@@ -1,6 +1,20 @@
 <template>
     <div>
         <UpcycleSearch />
+        <main>
+            <div class="UpofWeek">Upcycles of the Week</div>
+        </main>
+        <carousel
+            @next="next"
+            @prev="prev"
+        >
+            <carousel-slide v-for="(slide,index) in slides"
+                 :key="slide"
+                 :index="index"
+                 :visibleSlide="visibleSlide">
+                <img :src="slide" />
+            </carousel-slide>
+        </carousel>
         <div class="newUserSection">
             <img :src="require(`@/assets/boots.jpg`)" class="boots" width= '400' height= '500'>
             <div class="name">New to Upcycling?</div>
@@ -13,16 +27,58 @@
 <script>
 
     import UpcycleSearch from './UpcycleSearch.vue';
-
+    import CarouselSlide from './CarouselSlide.vue';
+    import Carousel from './Carousel.vue';
     export default {
+        data(){
+            return{
+                slides: [
+                    "@/assets/homemadePaper.jpg", 
+                    "@/assets/homemadePaper.jpg",
+                    "@/assets/dogTreatDispenser.jpg",
+                    "@/assets/cakePanSucculentGarden.jpg"
+                ],
+                visibleSlide : 0,
+            }
+        },
+        computed: {
+            slidesLen(){
+                return this.slides.length;
+            }
+        },
+        methods: {
+            next(){
+                if(this.visibleSlide >= this.slides.length -1){
+                    this.visibleSlide = 0;
+                }else{
+                    this.visibleSlide++;
+                }
+            },
+            prev(){
+                if(this.visibleSlide <=0){
+                    this.visibleSlide = this.slides.length -1;
+                }else{
+                    this.visibleSlide--;
+                }
+            }
+        },
         name: 'Homepage',
         components: {
             UpcycleSearch,
+            Carousel,
+            CarouselSlide,
         }
     }
 </script>
 
 <style scoped>
+main .UpofWeek{
+    font-size: 50px;
+    width:100vw;
+    background-color: #8db7c5;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .newUserSection {
     width: 100vw;
     height: 590px;
