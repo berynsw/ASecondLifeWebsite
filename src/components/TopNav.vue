@@ -43,7 +43,6 @@ nav .menuItem{
 nav .menuItem.active, 
 nav .menuItem:hover{
     background-color: #55667F;
-    border-bottom-color: #55667F;
-    opacity: 90%;
+    border-bottom-color: #3a4557;
 }
 </style>

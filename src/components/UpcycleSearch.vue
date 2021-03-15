@@ -1,69 +1,32 @@
 <template>
     <main>
-        <!-- <div class="name">A <br> Second <br> Life</div> -->
-         <div class="background">
-         
-          <div class="banner-content">
-            
-            A <br> Second <br> Life
-            
+        <div class="background">
+            <div class="banner-content">
+                A <br> Second <br> Life
+            </div>
+            <div class="rightBox">
+                <div id = 'dropdownlist' class="dropDown" > 
+                    <h1 class="boxHeading">Know what you want to upcycle?</h1>
+                </div>
+                <router-link class="boxButton" to="./explore">
+                    Start Creating
+                </router-link>
+            </div>
         </div>
-        
-         <div class="rightBox">
-         <div id = 'dropdownlist' class="dropDown" >
-             <h1 class="boxHeading">Know what you want to <br> upcycle ?</h1>
-         </div>
-         
-         <router-link class="boxButton" to="./explore">Start Creating</router-link>
-         <!-- <button @click="showText = !showText" class="boxButton">🔍 Search By Category</button> -->
-         
-         <!-- <div v-if="showText">
-            
-
-            <router-link class="menuItem" to="./MaterialCategories/Rubber/RubberBoots/RubberBootPlanter">Rubber Boots</router-link>
-            <router-link class="menuItem" to="./MaterialCategories/Rubber/RubberBoots/RubberBootPlanter">Rubber Boots</router-link>
-            
-            <button @click="showHello = !showHello" class="optionButton">Plastic</button>
-            <button @click="showHello = !showHello" class="optionButton">Metal</button>
-            <button @click="showHello = !showHello" class="optionButton">Wood</button>
-            
-
-         </div> -->
-         <h1 v-if="showHello">hello</h1>
-         </div>
-        </div>
-        <!-- <input class="search" type="text" v-model="search" placeholder="🔍 What do you want to upcycle?" /> -->
     </main>
 </template>
 
 <script>
-// import Vue from 'vue';
-// import { DropDownListPlugin } from '@syncfusion/ej2-vue-dropdowns';
-// Vue.use(DropDownListPlugin);
+
 
 export default {
     name: "UpcycleSearch",
-
-    data: function(){
-        return {
-            showText: false,
-            showHello: false,
-            // localData: [
-            //     {Id: 'upcycle1', Type: 'Plastic'},
-            //     {Id: 'upcycle2', Type: 'Metal'},
-            //     {Id: 'upcycle3', Type: 'Cloth'}
-            // ],
-            // localField: {value: 'Id', text: 'Type'}
-        }
-    }
-
 }
 </script>
 
 <style scoped>
-/* @import url(https://cdn.syncfusion.com/ej2/material.css); */
 .background{
-      background-image: url("../assets/homemadePaper.jpg");
+    background-image: url("../assets/homemadePaper.jpg");
      opacity: 0.8;
      background-size: cover;
      background-position: center center;
@@ -77,108 +40,74 @@ export default {
   position: absolute;
   top: 20%;
   left: 5%;
-  font-size: 100pt;
+  font-size: 10vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/* main {
-    width: 100vw;
-    height: 600px;
-    padding: 50px 80px;
-    background-color: #8db7c5;
-}
-main .name{
-    font-size: 80pt;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    float: left;
-        
-} */
+
 
 main .rightBox{
     margin-top: 13%;
-    width: 550px;
-    height: 350px;
+    width: 32vw;
+    height: 40vh;
     float: right;
     margin-left: 55%;
     background-color: #FAF2EC;
     position: relative;
-    box-shadow: 20px 20px #888888;
+    box-shadow: 1.3vw 1.3vw #888888;
     text-align: center;
     font-family: helvetica;
-    font-size: 1.3em;
     font-weight: bold;
-}
-
-main .boxHeading {
-    position: absolute;
-    color:gray;
-    text-align: center;
-    top: 30%;
-    margin-left: 25px;
-
-    
-}
-main .boxButton{
-    width:450px;
-    height: 40px;
     display: block;
-    margin-top: 45%;
+}
+
+
+main .boxButton{
+    width: 23vw;
+    height: 5vh;
+
+    margin-top: 7vh;
     margin-left: auto;
     margin-right: auto;
     background-color:#55667F;
-    border: 3px solid gray;
+    border: 5px solid transparent;
     color:white;
     text-align: center;
     text-decoration: none;
     font-family: helvetica;
-    font-size: 20pt;
+    font-size: 1.4vw;
+    line-height: 4vh;
+    display: table;
 }
-main .boxButton:hover {
-  background-color: #555555;
-  color: white;
- 
-}
+
 
 main .boxButton.active, 
 main .boxButton:hover{
-    background-color:#55667F;
-    border-color: #55667F;
-    opacity: 90%;
-}
 
-main .optionButton{
-    display:block;
-    width:450px;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color:rgb(245, 245, 220); 
-    color:gray;
-    font-weight: bold;
-    border: rgb(245, 245, 220);
+    border-color: #3a4557;
 }
 
 main .dropDown {
+    text-align: center;
+    width: 28vw;
+    display: table;
 
-    width:450px;
-    display: block;
-    margin-top: 45%;
+    color:gray;
+
+
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
-    background-color:beige;
 }
-main .search{
-    width: 550px;
-    height: 40px;
-    margin: 25px 0px;
-    padding: 25px 0px;
-    border-radius: 25px;
-    border-color: #777;
-    box-shadow: -1px -1px #777;
-    font-size: 20pt;
-    font-family: 'Courier New', Courier, monospace;
+main .boxHeading {
+
+    color:gray;
     text-align: center;
-    opacity: 80%;
+
+    display: table;
+    margin-top: 5vh;
+
+    margin: 0 auto; 
+    font-size: 2vw;
 }
 
 </style>

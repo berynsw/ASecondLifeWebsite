@@ -27,46 +27,16 @@
 <script>
 
     import UpcycleSearch from './UpcycleSearch.vue';
-    import CarouselSlide from './CarouselSlide.vue';
+
     import Carousel from './Carousel.vue';
     export default {
-        data(){
-            return{
-                slides: [
-                    "@/assets/homemadePaper.jpg", 
-                    "@/assets/homemadePaper.jpg",
-                    "@/assets/dogTreatDispenser.jpg",
-                    "@/assets/cakePanSucculentGarden.jpg"
-                ],
-                visibleSlide : 0,
-            }
-        },
-        computed: {
-            slidesLen(){
-                return this.slides.length;
-            }
-        },
-        methods: {
-            next(){
-                if(this.visibleSlide >= this.slides.length -1){
-                    this.visibleSlide = 0;
-                }else{
-                    this.visibleSlide++;
-                }
-            },
-            prev(){
-                if(this.visibleSlide <=0){
-                    this.visibleSlide = this.slides.length -1;
-                }else{
-                    this.visibleSlide--;
-                }
-            }
-        },
+
+
+
         name: 'Homepage',
         components: {
             UpcycleSearch,
             Carousel,
-            CarouselSlide,
         }
     }
 </script>
@@ -76,7 +46,7 @@ main .UpofWeek{
     width: 100%;
     height: 120px;
     background-color:#8db7c5 ;
-    font-size: 60px;
+    font-size: 4vw;
     text-align: center;
     line-height: 140px;
     font-family: rockwell, bold;
@@ -92,55 +62,56 @@ main .UpofWeek{
     position: relative;
 }
 body .name{
-    font-size: 50px;
+    font-size: 3.5vw;
     font-family: rockwell;
     color: #48596C;
-    width: 800px;
+    width: 40vw;
     position: absolute;
-    top: 50px;
-    left: 100px;
+    top: 5.5vh;
+    left: 7vw;
 }
 body .text{
-    font-size: 30px;
+    font-size: 2vw;
     color: #48596C;
-    width: 500px;
+    width: 35vw;
     position: absolute;
-    top: 160px;
-    left: 100px;
+    top: 16vh;
+    left: 7vw;
 }
 body .boots{
     background-image: url("../assets/boots.jpg");
     position: absolute;
     border-style: solid;
     border-color:#48596C;
-    top: 50px;
-    right:150px;
+    top: 5vh;
+    right: 10vw;
 }
 body .NewUser{
-    width: 300px;
-    height: 60px;
-    margin: 25px 0px;
+    width: 17vw;
+    height: 5vh;
+    margin-bottom: 3vh;
     border-radius: 40px;
-    border: 5px solid;
-    border-color:#48596C;
-    font-size: 20pt;
+    border: 5px solid transparent;
+    font-size: 1.4vw;
     font-family: rockwell;
     text-align: center;
-    opacity: 80%; 
+    vertical-align: middle;
+    
+
     position: absolute;
-    bottom:20px;
-    left: 100px;
+    bottom: 3vh;
+    left: 7vw;
     transition: 0.4s;
-    color: #FAF2EC;
+    color: white;
     background-color: #55667F;
     text-decoration: none;
+    line-height: 5vh;
+    display: table;
+
 }
 body .NewUser.active, 
 body .NewUser:hover{
-    background-color: #48596C;
-    color: white;
-    border-color: #55667F;
-    opacity: 90%;
+    border-color: #3a4557;
 }
 
 </style>

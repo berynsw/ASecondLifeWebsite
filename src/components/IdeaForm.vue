@@ -42,28 +42,27 @@ main {
 
 }
 main .name{
-    font-size: 50px;
+    font-size: 2.8vw;
     font-family: rockwell;
     display: table;
     margin: 0 auto;
 
 }
 main .text{
-    font-size: 30px;
+    font-size: 1.8vw;
     display: table;
     margin: 0 auto;
     padding-bottom: 2%;
 }
 main .email{
     width: 32%;
-    height: 40px;
+    height: 5vh;
     border-radius: 25px;
-    border-color: #777;
+    border-color: #3a4557;
     /* box-shadow: -1px -1px #777; */
-    font-size: 20pt;
+    font-size: 1.5vw;
     font-family: helvetica;
     text-align: center;
-    opacity: 80%; 
     display: table;
     margin: 0 auto;
     
@@ -72,21 +71,18 @@ main .email{
 }
 main .idea{
     width: 32%;
-    height: 200px;
-
-
+    height: 20vh;
     border-radius: 25px;
-    border-color: #777;
+    border-color: #3a4557;
     /* box-shadow: -1px -1px #777; */
 
-    font-size: 20pt;
+    font-size: 1.5vw;
     font-family: helvetica;
     text-align: center;
-    opacity: 80%; 
 
     display: table;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 1vh;
 }
 main .submit{
     width: 10%;
@@ -94,13 +90,10 @@ main .submit{
     border-radius: 25px;
     border: 5px solid transparent;
     color: white;
-    background-color:#48596C;
-    border-color: #55667F;
-    font-size: 20pt;
+    background-color:#55667F;
+    font-size: 1.5vw;
     font-family: rockwell;
-    text-align: center;
-    line-height: 50px;
-    opacity: 80%; 
+    line-height: 5vh;
 
     display: table;
     margin: 0 auto;
@@ -109,8 +102,7 @@ main .submit{
 }
 main .submit.active, 
 main .submit:hover{
-    border-color: #55667F;
-    opacity: 90%;
+    border-color: #3a4557;
 }
 
 

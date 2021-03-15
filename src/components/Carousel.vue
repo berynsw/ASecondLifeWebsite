@@ -1,28 +1,31 @@
 <template>
     <div class="carousel">
-        <!-- <slot></slot> -->
 
         <button @click="next" class="next">Next &#9654;</button>
 
             <div class="grid-container">
-                <div id="left" class="slide" >
-                    <router-link v-if='leftUpcycle' class="link" :to="`./${leftUpcycle.upcycleName}`">
-                        <div>{{leftUpcycle.upcycleName}}</div>
-                        <img :src="require(`@/assets/${leftUpcycle.imageName}`)">
-                    </router-link>
-                </div>
-                <div id="middle" class="slide">
-                    <router-link class="link" :to="`./${midUpcycle.upcycleName}`">
-                        <div>{{midUpcycle.upcycleName}}</div>
-                        <img :src="require(`@/assets/${midUpcycle.imageName}`)">
-                    </router-link>
-                </div>
-                <div id="right" class="slide">
-                    <router-link v-if='rightUpcycle' class="link" :to="`./${rightUpcycle.upcycleName}`">
-                        <div>{{rightUpcycle.upcycleName}}</div>
-                        <img :src="require(`@/assets/${rightUpcycle.imageName}`)">
-                    </router-link>
-                </div>
+
+                    <div  id="left" class="slide" >
+                        <router-link v-if='leftUpcycle' class="link" :to="`./${leftUpcycle.upcycleName}`">
+                            <div>Item: {{leftUpcycle.itemName}}<br>Upcycle: {{leftUpcycle.upcycleName}}</div>
+                            <img :src="require(`@/assets/${leftUpcycle.imageName}`)">
+                        </router-link>
+                    </div>
+
+                    <div id="middle" class="slide">
+                        <router-link class="link" :to="`./${midUpcycle.upcycleName}`">
+                            <div>Item: {{midUpcycle.itemName}}<br>Upcycle: {{midUpcycle.upcycleName}}</div>
+                            <img :src="require(`@/assets/${midUpcycle.imageName}`)">
+                        </router-link>
+                    </div>
+
+                    <div  id="right" class="slide">
+                        <router-link v-if='rightUpcycle' class="link" :to="`./${rightUpcycle.upcycleName}`">
+                            <div>Item: {{rightUpcycle.itemName}}<br>Upcycle: {{rightUpcycle.upcycleName}}</div>
+                            <img :src="require(`@/assets/${rightUpcycle.imageName}`)">
+                        </router-link>
+                    </div>
+
             </div>
 
         <button @click="prev" class="prev">&#9664; Prev</button>
@@ -35,9 +38,9 @@ export default {
     data(){
         return{
             i: 0,
-            leftUpcycle: {},
+            leftUpcycle: null,
             midUpcycle: {},
-            rightUpcycle: {},
+            rightUpcycle: null,
             upcycles: []  
         }
     },
@@ -93,27 +96,28 @@ export default {
     .carousel{
         position:relative;
         width:100vw;
-        height:400px;
+        height:27vw;
         overflow:hidden;
         background-color: #a3ceae;
         position: relative;
-        vertical-align: middle;
+        display: flex;
+        justify-content: center;
+
     }
     button{
         position:absolute;
         height: 10%;
         top: calc(50% - 20px);
         background-color: #48596C;
-        border:4px solid #8db7c5;
+        border:4px solid #3a4557;
         color: white;
-        font-size:20pt;
+        font-size: 1.5vw;
         text-align: center;
     }
-    button:focus, 
+
     button:hover{
-        background-color: #48596C;
-        border-color: #c58db7;
-        opacity: 90%;
+        border-color: #8db7c5;
+        
     }
     .next{
         width: 7%;
@@ -130,39 +134,70 @@ export default {
         padding-right: .5%;
         left:0;
     }
+
+
     .grid-container{
         display: grid;
-        grid-template-columns: .3fr .5fr .3fr;
-        grid-gap: 5%;
-        width: 50%;
-        height: 140%;
-        margin: auto;
-        margin-top: 1.2%;
-        margin-bottom: 1.2%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3%;
+        width: 30%;
+        margin-top: vh;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: 42.3vw;
+
     }
     .slide{
-
-        font-size: 115%;
+        font-family: rockwell;
+        font-size: 1.3vw;
         color: white;
         text-align: center;
-        height: 65%;
-        width: 100%;
-        transition: .4s; 
+        width: 18vw;
+
+        transition: .4s;
+        border:4px solid #8db7c5; 
+        background-color: #55667F;
     }
     .slide img{
-        max-width: 80%;
-        max-height: 40vh;
+        max-width: 14vw;
+        max-height: 42vh;
+        border:4px solid #48596C;
+        margin-top: 1.4vh;
     }
     .link{
         color: white;
+        text-decoration: none;
         display: block;
-        border:4px solid #8db7c5;
+        border:4px solid #48596C;
+        transition: .4s;
     }
+     
+    .link:hover{
+        background-color: #48596C;
+    }
+
     #left{
-        margin-top: 30%;
+        font-size: 1vw;
+        width: 12vw;  
     }
     #right{
-        margin-top: 30%;
+        font-size: 1vw;
+        width: 12vw;
     }
+    #left img{
+        font-size: 1vw;
+        max-width: 9vw;
+        max-height: 30vh;
+        margin-top: .8vh;  
+    }
+    #right img{
+        font-size: 1vw;
+        max-width: 9vw;
+        max-height: 30vh; 
+        margin-top: .8vh;
+    }
+
+
 
 </style>

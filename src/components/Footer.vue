@@ -58,14 +58,12 @@ nav .menuItem{
 nav .menuItem.active, 
 nav .menuItem:hover{
     border-bottom-color: #55667F;
-    opacity: 90%;
 }
 
 nav .menuItem.active, 
 nav .menuItem:hover{
     /* background-color: #555; */
     border-left-color: #55667F;
-    opacity: 90%;
     color: black;
 }
 
