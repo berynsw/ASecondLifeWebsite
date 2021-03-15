@@ -105,11 +105,12 @@ test{
 .resourcesHeading{
 
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color:#8db7c5 ;
-    font-size: 40pt;
+    font-size: 60px;
     text-align: center;
-    font-family: Bree Serif;
+    line-height: 130px;
+    font-family: rockwell;
 }
 
 body{
@@ -125,7 +126,7 @@ body{
     width: 100%;
     padding: 8%;
     font-size: 30px;
-    font-family: 'Karla';
+    font-family: helvetica;
 }
 
 .p{
@@ -144,10 +145,10 @@ body{
 .ul{
     display: block;
     width: 60%;
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 46px;
     line-height: 1.8em;
-    font-family: 'Karla';
+    font-family: rockwell;
 }
 a:link , a:visited{
     color:white;

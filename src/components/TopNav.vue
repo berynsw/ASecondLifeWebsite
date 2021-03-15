@@ -20,13 +20,14 @@ nav{
     padding: 0px 50px;
     background-color: #8dc59b;
     font-size: 24pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     display: flex;
     /* align-items: center; */
     justify-content: left;
 }
 nav .menuItem{
-    padding: 25px 25px;
+    padding: 25px 80px;
     position: relative;
     text-align: center;
     border-bottom: 5px solid transparent;
@@ -41,8 +42,8 @@ nav .menuItem{
 
 nav .menuItem.active, 
 nav .menuItem:hover{
-    background-color: #555;
-    border-bottom-color: #c58db7;
+    background-color: #55667F;
+    border-bottom-color: #55667F;
     opacity: 90%;
 }
 </style>

@@ -94,7 +94,7 @@ main .name{
 } */
 
 main .rightBox{
-    margin-top: 7%;
+    margin-top: 13%;
     width: 550px;
     height: 350px;
     float: right;
@@ -103,7 +103,7 @@ main .rightBox{
     position: relative;
     box-shadow: 20px 20px #888888;
     text-align: center;
-    font-family: 'Karla';
+    font-family: helvetica;
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -124,12 +124,12 @@ main .boxButton{
     margin-top: 45%;
     margin-left: auto;
     margin-right: auto;
-    background-color:#FAF2EC;
+    background-color:#55667F;
     border: 3px solid gray;
-    color:gray;
+    color:white;
     text-align: center;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: helvetica;
     font-size: 20pt;
 }
 main .boxButton:hover {
@@ -140,8 +140,8 @@ main .boxButton:hover {
 
 main .boxButton.active, 
 main .boxButton:hover{
-    background-color: #48596C;
-    border-color: #c58db7;
+    background-color:#55667F;
+    border-color: #55667F;
     opacity: 90%;
 }
 

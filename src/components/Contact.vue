@@ -8,7 +8,7 @@
         </main>
         <body>
             <img :src="require(`@/assets/Map.png`)" class="map" width= '600' height= '400'>
-            <div class="text">Find us in Bellingham, Wa! <br/> Email: ASecondLife@gmail.com</div>
+            <div class="text">Find us in Bellingham, Washington. <br/> Email: ASecondLife@gmail.com</div>
         </body>
     </div>
 </template>
@@ -35,19 +35,14 @@ header .name{
         
 }
 
-main {
-    width: 100vw;
-    height:100px;
-    padding:50px 80px;
-    background-color: #8db7c5;
-    position: relative;
-}
 main .subject{
-    font-size: 50pt;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    position: absolute;
-    left: 500px;
-    top: 10px;
+    font-family: rockwell;
+    width: 100%;
+    height: 120px;
+    background-color:#8db7c5 ;
+    font-size: 60px;
+    text-align: center;
+    line-height: 130px;
 }
 body{
     width: 100vw;
@@ -57,7 +52,7 @@ body{
 }
 body .text{
     font-size:20pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: helvetica;
     width: 600px;
     padding: 50px 50px;
     background-color:#8db7c5;
