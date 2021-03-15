@@ -3,10 +3,28 @@
         <!-- <slot></slot> -->
 
         <button @click="next" class="next">Next &#9654;</button>
-        <div class="slide">
-            {{curUpcycle.upcycleName}}
-            <img :src="require(`@/assets/${curUpcycle.imageName}`)">
-        </div>
+
+            <div class="grid-container">
+                <div id="left" class="slide" >
+                    <router-link v-if='leftUpcycle' class="link" :to="`./${leftUpcycle.upcycleName}`">
+                        <div>{{leftUpcycle.upcycleName}}</div>
+                        <img :src="require(`@/assets/${leftUpcycle.imageName}`)">
+                    </router-link>
+                </div>
+                <div id="middle" class="slide">
+                    <router-link class="link" :to="`./${midUpcycle.upcycleName}`">
+                        <div>{{midUpcycle.upcycleName}}</div>
+                        <img :src="require(`@/assets/${midUpcycle.imageName}`)">
+                    </router-link>
+                </div>
+                <div id="right" class="slide">
+                    <router-link v-if='rightUpcycle' class="link" :to="`./${rightUpcycle.upcycleName}`">
+                        <div>{{rightUpcycle.upcycleName}}</div>
+                        <img :src="require(`@/assets/${rightUpcycle.imageName}`)">
+                    </router-link>
+                </div>
+            </div>
+
         <button @click="prev" class="prev">&#9664; Prev</button>
 
     </div>
@@ -16,25 +34,43 @@
 export default {
     data(){
         return{
-            left: Number,
-            middle: Number,
-            right: Number,
-            curUpcycle: {},
-            upcycles: []
-            
+            i: 0,
+            leftUpcycle: {},
+            midUpcycle: {},
+            rightUpcycle: {},
+            upcycles: []  
         }
     },
     methods: {
         next(){
             if(this.i != this.upcycles.length-1){
                 this.i++;
-                this.curUpcycle = this.upcycles[this.i];
+                
+                this.leftUpcycle = this.upcycles[this.i-1];
+                this.midUpcycle = this.upcycles[this.i];
+                //don't show right upcycle if we are at end of array
+                if(this.i == this.upcycles.length-1){
+                    this.rightUpcycle = null;
+                }
+                else{
+                    this.rightUpcycle = this.upcycles[this.i+1];
+                }
             }
         },
         prev(){
             if(this.i != 0){
                 this.i--;
-                this.curUpcycle = this.upcycles[this.i];
+                
+                //don't show left upcycle if we are at end of array
+                if(this.i == 0){
+                    this.leftUpcycle = null;
+                }
+                else{
+                    this.leftUpcycle = this.upcycles[this.i-1];
+                }
+                this.midUpcycle = this.upcycles[this.i];
+                this.rightUpcycle = this.upcycles[this.i+1];
+
             }
         }
     },
@@ -43,8 +79,10 @@ export default {
         .then(response => response.json())
         .then(data => {
           this.upcycles = data;
-          this.i = 0;
-          this.curUpcycle = this.upcycles[0];
+          this.i = 1;
+          this.leftUpcycle = this.upcycles[this.i-1];
+          this.midUpcycle = this.upcycles[this.i];
+          this.rightUpcycle = this.upcycles[this.i+1];
         })
         .catch(err => console.log(err.message))
     }
@@ -73,10 +111,10 @@ export default {
     }
     button:focus, 
     button:hover{
-    background-color: #48596C;
-    border-color: #c58db7;
-    opacity: 90%;
-}
+        background-color: #48596C;
+        border-color: #c58db7;
+        opacity: 90%;
+    }
     .next{
         width: 7%;
         border-right: none;
@@ -92,21 +130,39 @@ export default {
         padding-right: .5%;
         left:0;
     }
+    .grid-container{
+        display: grid;
+        grid-template-columns: .3fr .5fr .3fr;
+        grid-gap: 5%;
+        width: 50%;
+        height: 140%;
+        margin: auto;
+        margin-top: 1.2%;
+        margin-bottom: 1.2%;
+    }
     .slide{
-        align-self: center;
-        font-size: 14pt;
+
+        font-size: 115%;
         color: white;
         text-align: center;
-        height: 95%;
-        width: 15%;
-        margin: auto;
-        border:4px solid #8db7c5;
-        margin-top: .5%;
-        transition: .4s;
-        
+        height: 65%;
+        width: 100%;
+        transition: .4s; 
     }
     .slide img{
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 80%;
+        max-height: 40vh;
     }
+    .link{
+        color: white;
+        display: block;
+        border:4px solid #8db7c5;
+    }
+    #left{
+        margin-top: 30%;
+    }
+    #right{
+        margin-top: 30%;
+    }
+
 </style>
