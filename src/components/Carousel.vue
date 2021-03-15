@@ -108,15 +108,15 @@ export default {
         position:absolute;
         height: 10%;
         top: calc(50% - 20px);
-        background-color: #48596C;
-        border:4px solid #3a4557;
+        background-color: #55667F;
+        border:4px solid #48596C;
         color: white;
         font-size: 1.5vw;
         text-align: center;
     }
 
     button:hover{
-        border-color: #8db7c5;
+        background-color: #48596C;
         
     }
     .next{
@@ -150,26 +150,26 @@ export default {
     }
     .slide{
         font-family: rockwell;
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         color: white;
         text-align: center;
-        width: 18vw;
+        width: 17.14vw;
 
         transition: .4s;
-        border:4px solid #8db7c5; 
+        border: .25vw solid #8db7c5; 
         background-color: #55667F;
     }
     .slide img{
-        max-width: 14vw;
-        max-height: 42vh;
-        border:4px solid #48596C;
-        margin-top: 1.4vh;
+        max-width: 12.86vw;
+        max-height: 42.86vh;
+        border: .25vw solid #48596C;
+        margin-top: 1.14vh;
     }
     .link{
         color: white;
         text-decoration: none;
         display: block;
-        border:4px solid #48596C;
+        border: .25vw solid #48596C;
         transition: .4s;
     }
      
@@ -178,24 +178,32 @@ export default {
     }
 
     #left{
-        font-size: 1vw;
-        width: 12vw;  
+        font-size: .77vw;
+        width: 12vw;
+        border: .175vw solid #8db7c5;  
     }
     #right{
-        font-size: 1vw;
+        font-size: .77vw;
         width: 12vw;
+        border: .175vw solid #8db7c5; 
     }
     #left img{
-        font-size: 1vw;
         max-width: 9vw;
         max-height: 30vh;
-        margin-top: .8vh;  
+        margin-top: .8vh;
+        border: .175vw solid #48596C;  
     }
     #right img{
-        font-size: 1vw;
         max-width: 9vw;
         max-height: 30vh; 
         margin-top: .8vh;
+        border: .175vw solid #48596C;
+    }
+    #left .link{
+        border: .175vw solid #48596C;
+    }
+    #right .link{
+        border: .175vw solid #48596C;
     }
 
 

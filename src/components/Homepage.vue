@@ -44,11 +44,11 @@
 <style scoped>
 main .UpofWeek{
     width: 100%;
-    height: 120px;
+    height: 14vh;
     background-color:#8db7c5 ;
     font-size: 4vw;
     text-align: center;
-    line-height: 140px;
+    line-height: 14vh;
     font-family: rockwell, bold;
 }
 .newUserSection {
