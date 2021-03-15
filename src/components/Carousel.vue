@@ -155,6 +155,7 @@ export default {
         text-align: center;
         width: 17.14vw;
 
+
         transition: .4s;
         border: .25vw solid #8db7c5; 
         background-color: #55667F;
@@ -163,14 +164,21 @@ export default {
         max-width: 12.86vw;
         max-height: 42.86vh;
         border: .25vw solid #48596C;
+
+        display: table cell;
+        margin: 0 auto;
         margin-top: 1.14vh;
     }
     .link{
         color: white;
         text-decoration: none;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
         border: .25vw solid #48596C;
         transition: .4s;
+        height: 50vh;
     }
      
     .link:hover{
@@ -201,9 +209,11 @@ export default {
     }
     #left .link{
         border: .175vw solid #48596C;
+        height: 35vh;
     }
     #right .link{
         border: .175vw solid #48596C;
+        height: 35vh;
     }
 
 

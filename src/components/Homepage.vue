@@ -2,7 +2,7 @@
     <div>
         <UpcycleSearch />
         <main>
-            <div class="UpofWeek">Upcycles Of The Week</div>
+            <div class="UpofWeek">Upcycles of the Week</div>
         </main>
         <carousel
             @next="next"
