@@ -13,7 +13,7 @@
         </div>
         
          <div class="woodUpcycleHeading">
-            <p>| About Us! |</p>
+            <p>| About Us |</p>
 
         </div>
         <body>
@@ -88,11 +88,12 @@ test{
 .woodUpcycleHeading{
 
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color:#8db7c5 ;
-    font-size: 40pt;
+    font-size: 60px;
     text-align: center;
-    font-family: Bree Serif;
+    line-height: 140px;
+    font-family: rockwell, bold;
 }
 
 body{
@@ -136,13 +137,13 @@ body .text{
 }
 .section-left-img {
 	float: left;
-	
 	width: 40%;
     margin-left: 12%;
 	padding: 15px;
 	margin-top: -580px;
      
 }
+
 .section-right-text {
 	float: right;
 	width: 40%;
@@ -176,7 +177,7 @@ body .text{
 }
 .text{
     color:rgb(30, 49, 61);
-    font-family: Karla;
+    font-family: helvetica;
     margin-top: 1em;
 }
 

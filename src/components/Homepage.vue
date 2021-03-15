@@ -2,7 +2,7 @@
     <div>
         <UpcycleSearch />
         <main>
-            <div class="UpofWeek">Upcycles of the Week</div>
+            <div class="UpofWeek">Upcycles Of The Week</div>
         </main>
         <carousel
             @next="next"
@@ -73,11 +73,13 @@
 
 <style scoped>
 main .UpofWeek{
-    font-size: 50px;
-    width:100vw;
-    background-color: #8db7c5;
+    width: 100%;
+    height: 120px;
+    background-color:#8db7c5 ;
+    font-size: 60px;
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 140px;
+    font-family: rockwell, bold;
 }
 .newUserSection {
     width: 100vw;
@@ -86,12 +88,12 @@ main .UpofWeek{
     background-color: #FAF2EC;
     /* background-color:rgb(245, 245, 220);  */
     color: rgb(25, 28, 46);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: helvetica;
     position: relative;
 }
 body .name{
     font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: rockwell;
     color: #48596C;
     width: 800px;
     position: absolute;
@@ -116,13 +118,13 @@ body .boots{
 }
 body .NewUser{
     width: 300px;
-    height: 40px;
+    height: 60px;
     margin: 25px 0px;
-    border-radius: 25px;
+    border-radius: 40px;
     border: 5px solid;
     border-color:#48596C;
     font-size: 20pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: rockwell;
     text-align: center;
     opacity: 80%; 
     position: absolute;
@@ -130,14 +132,14 @@ body .NewUser{
     left: 100px;
     transition: 0.4s;
     color: #FAF2EC;
-    background-color: grey;
+    background-color: #55667F;
     text-decoration: none;
 }
 body .NewUser.active, 
 body .NewUser:hover{
     background-color: #48596C;
     color: white;
-    border-color: #c58db7;
+    border-color: #55667F;
     opacity: 90%;
 }
 
