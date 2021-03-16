@@ -61,10 +61,6 @@ export default {
 </script>
 
 <style scoped>
-test{
-    color:black;
-    font-size: 30pt;
-}
 
 .background{
       background-image: url("../assets/Garden.jpeg");
@@ -134,6 +130,7 @@ body .text{
 	margin-top: 50px;
     font-size: 30px;
     text-align: justify;
+    
 }
 .section-left-img {
 	float: left;
@@ -176,7 +173,7 @@ body .text{
      box-shadow:0 20px 40px #292e477d;
 }
 .text{
-    color:rgb(30, 49, 61);
+      color:rgb(90, 103, 117);
     font-family: helvetica;
     margin-top: 1em;
 }

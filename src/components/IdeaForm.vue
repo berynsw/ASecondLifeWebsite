@@ -9,9 +9,11 @@
         <section>
             <input class="email" type="text" v-model="email" placeholder="Email..." />
         </section>
+        <br>
         <section>
             <input class="idea" type="text" v-model="idea" placeholder="Upcycle Idea..." />
         </section>
+        <br>
         <section>
             <button class="submit" v-on:click="submit">Submit</button>
         </section>

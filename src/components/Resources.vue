@@ -78,10 +78,6 @@ export default {
 </script>
 
 <style scoped>
-test{
-    color:black;
-    font-size: 30pt;
-}
 
 .background{
      background-image: url("../assets/nycshopping.jpg");
