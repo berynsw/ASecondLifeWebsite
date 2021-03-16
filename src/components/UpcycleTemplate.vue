@@ -40,7 +40,7 @@ export default {
         }
     },
     mounted(){
-        fetch('http://localhost:3000/upcycles')
+        fetch('https://a-second-life.herokuapp.com/upcycles')
         .then(response => response.json())
         .then(data => {
             data.forEach(d => {

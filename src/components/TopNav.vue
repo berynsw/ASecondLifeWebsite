@@ -5,6 +5,7 @@
         <router-link class="menuItem" to="./resources">Resources</router-link>
         <router-link class="menuItem" to="./about">About</router-link>
         <router-link class="menuItem" to="./contact">Contact</router-link>
+        <router-link class="menuItem" to="./writeup">Project Writeup</router-link>
     </nav>
 </template>
 
@@ -17,19 +18,20 @@ export default {
 <style scoped>
 nav{
     width: 100vw;
-    padding: 0px 50px;
+    padding: 0px 0vw;
     background-color: #8dc59b;
-    font-size: 24pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
     display: flex;
     /* align-items: center; */
     justify-content: left;
 }
 nav .menuItem{
-    padding: 25px 25px;
+    padding: 2vh 3.4vw;
     position: relative;
     text-align: center;
-    border-bottom: 5px solid transparent;
+    border-bottom: .65vh solid transparent;
     border-top: 5px solid transparent;
     display: flex;
     transition: 0.4s;
@@ -41,8 +43,7 @@ nav .menuItem{
 
 nav .menuItem.active, 
 nav .menuItem:hover{
-    background-color: #555;
-    border-bottom-color: #c58db7;
-    opacity: 90%;
+    background-color: #55667F;
+    border-bottom-color: #3a4557;
 }
 </style>

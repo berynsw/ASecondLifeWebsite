@@ -9,9 +9,11 @@
         <section>
             <input class="email" type="text" v-model="email" placeholder="Email..." />
         </section>
+        <br>
         <section>
             <input class="idea" type="text" v-model="idea" placeholder="Upcycle Idea..." />
         </section>
+        <br>
         <section>
             <button class="submit" v-on:click="submit">Submit</button>
         </section>
@@ -35,71 +37,65 @@ main {
     padding-top: 2%;
     padding-bottom: 2%;
     background-color: #a3ceae;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: helvetica;
     position: relative;
     display: block;
 
 
 }
 main .name{
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.8vw;
+    font-family: rockwell;
     display: table;
     margin: 0 auto;
 
 }
 main .text{
-    font-size: 30px;
+    font-size: 1.8vw;
     display: table;
     margin: 0 auto;
     padding-bottom: 2%;
 }
 main .email{
     width: 32%;
-    height: 40px;
-
+    height: 5vh;
     border-radius: 25px;
-    border-color: #777;
+    border-color: #3a4557;
     /* box-shadow: -1px -1px #777; */
-    font-size: 20pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-family: helvetica;
     text-align: center;
-    opacity: 80%; 
     display: table;
     margin: 0 auto;
+    
 
 
 }
 main .idea{
     width: 32%;
-    height: 200px;
-
-
+    height: 20vh;
     border-radius: 25px;
-    border-color: #777;
+    border-color: #3a4557;
     /* box-shadow: -1px -1px #777; */
 
-    font-size: 20pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-family: helvetica;
     text-align: center;
-    opacity: 80%; 
 
     display: table;
     margin: 0 auto;
+    padding-bottom: 1vh;
 }
 main .submit{
     width: 10%;
-    height: 5%;
-
+    height: 10%;
     border-radius: 25px;
     border: 5px solid transparent;
-    border-color: rgb(73, 73, 73);
     color: white;
-    background-color: grey;
-    font-size: 20pt;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    opacity: 80%; 
+    background-color:#55667F;
+    font-size: 1.5vw;
+    font-family: rockwell;
+    line-height: 5vh;
 
     display: table;
     margin: 0 auto;
@@ -108,9 +104,7 @@ main .submit{
 }
 main .submit.active, 
 main .submit:hover{
-    background-color: #48596C;
-    border-color: #c58db7;
-    opacity: 90%;
+    border-color: #3a4557;
 }
 
 

@@ -4,17 +4,7 @@
         <main>
             <div class="UpofWeek">Upcycles of the Week</div>
         </main>
-        <carousel
-            @next="next"
-            @prev="prev"
-        >
-            <carousel-slide v-for="(slide,index) in slides"
-                 :key="slide"
-                 :index="index"
-                 :visibleSlide="visibleSlide">
-                <img :src="slide" />
-            </carousel-slide>
-        </carousel>
+        <Carousel />
         <div class="newUserSection">
             <img :src="require(`@/assets/boots.jpg`)" class="boots" width= '400' height= '500'>
             <div class="name">New to Upcycling?</div>
@@ -25,120 +15,87 @@
 </template>
 
 <script>
-
     import UpcycleSearch from './UpcycleSearch.vue';
-    import CarouselSlide from './CarouselSlide.vue';
     import Carousel from './Carousel.vue';
     export default {
-        data(){
-            return{
-                slides: [
-                    "@/assets/homemadePaper.jpg", 
-                    "@/assets/homemadePaper.jpg",
-                    "@/assets/dogTreatDispenser.jpg",
-                    "@/assets/cakePanSucculentGarden.jpg"
-                ],
-                visibleSlide : 0,
-            }
-        },
-        computed: {
-            slidesLen(){
-                return this.slides.length;
-            }
-        },
-        methods: {
-            next(){
-                if(this.visibleSlide >= this.slides.length -1){
-                    this.visibleSlide = 0;
-                }else{
-                    this.visibleSlide++;
-                }
-            },
-            prev(){
-                if(this.visibleSlide <=0){
-                    this.visibleSlide = this.slides.length -1;
-                }else{
-                    this.visibleSlide--;
-                }
-            }
-        },
         name: 'Homepage',
         components: {
             UpcycleSearch,
             Carousel,
-            CarouselSlide,
         }
     }
 </script>
 
 <style scoped>
 main .UpofWeek{
-    font-size: 50px;
-    width:100vw;
-    background-color: #8db7c5;
+    width: 100%;
+    height: 14vh;
+    background-color:#8db7c5 ;
+    font-size: 4vw;
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 14vh;
+    font-family: rockwell, bold;
 }
 .newUserSection {
     width: 100vw;
     height: 590px;
     padding: 50px 80px;
     background-color: #FAF2EC;
-    /* background-color:rgb(245, 245, 220);  */
     color: rgb(25, 28, 46);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: helvetica;
     position: relative;
 }
 body .name{
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.5vw;
+    font-family: rockwell;
     color: #48596C;
-    width: 800px;
+    width: 40vw;
     position: absolute;
-    top: 50px;
-    left: 100px;
+    top: 5.5vh;
+    left: 7vw;
 }
 body .text{
-    font-size: 30px;
+    font-size: 2vw;
     color: #48596C;
-    width: 500px;
+    width: 35vw;
     position: absolute;
-    top: 160px;
-    left: 100px;
+    top: 16vh;
+    left: 7vw;
 }
 body .boots{
     background-image: url("../assets/boots.jpg");
     position: absolute;
     border-style: solid;
     border-color:#48596C;
-    top: 50px;
-    right:150px;
+    top: 5vh;
+    right: 10vw;
 }
 body .NewUser{
-    width: 300px;
-    height: 40px;
-    margin: 25px 0px;
-    border-radius: 25px;
-    border: 5px solid;
-    border-color:#48596C;
-    font-size: 20pt;
-    font-family: 'Courier New', Courier, monospace;
+    width: 17vw;
+    height: 5vh;
+    margin-bottom: 3vh;
+    border-radius: 40px;
+    border: 5px solid transparent;
+    font-size: 1.4vw;
+    font-family: rockwell;
     text-align: center;
-    opacity: 80%; 
+    vertical-align: middle;
+    
+
     position: absolute;
-    bottom:20px;
-    left: 100px;
+    bottom: 3vh;
+    left: 7vw;
     transition: 0.4s;
-    color: #FAF2EC;
-    background-color: grey;
+    color: white;
+    background-color: #55667F;
     text-decoration: none;
+    line-height: 5vh;
+    display: table;
+
 }
 body .NewUser.active, 
 body .NewUser:hover{
-    background-color: #48596C;
-    color: white;
-    border-color: #c58db7;
-    opacity: 90%;
+    border-color: #3a4557;
 }
 
 </style>

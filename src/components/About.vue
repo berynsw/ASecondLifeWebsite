@@ -13,7 +13,7 @@
         </div>
         
          <div class="woodUpcycleHeading">
-            <p>| About Us! |</p>
+            <p>| About Us |</p>
 
         </div>
         <body>
@@ -61,10 +61,6 @@ export default {
 </script>
 
 <style scoped>
-test{
-    color:black;
-    font-size: 30pt;
-}
 
 .background{
       background-image: url("../assets/Garden.jpeg");
@@ -88,11 +84,12 @@ test{
 .woodUpcycleHeading{
 
     width: 100%;
-    height: 80px;
+    height: 120px;
     background-color:#8db7c5 ;
-    font-size: 40pt;
+    font-size: 60px;
     text-align: center;
-    font-family: Bree Serif;
+    line-height: 140px;
+    font-family: rockwell, bold;
 }
 
 body{
@@ -133,16 +130,17 @@ body .text{
 	margin-top: 50px;
     font-size: 30px;
     text-align: justify;
+    
 }
 .section-left-img {
 	float: left;
-	
 	width: 40%;
     margin-left: 12%;
 	padding: 15px;
 	margin-top: -580px;
      
 }
+
 .section-right-text {
 	float: right;
 	width: 40%;
@@ -175,8 +173,8 @@ body .text{
      box-shadow:0 20px 40px #292e477d;
 }
 .text{
-    color:rgb(30, 49, 61);
-    font-family: Karla;
+      color:rgb(90, 103, 117);
+    font-family: helvetica;
     margin-top: 1em;
 }
 

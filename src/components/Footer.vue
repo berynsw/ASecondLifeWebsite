@@ -42,7 +42,7 @@ nav{
     left: 300px;
     background-color: #8db7c5;
     font-size: 18pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: helvetica;
     justify-content: left;
 }
 nav .menuItem{
@@ -57,15 +57,13 @@ nav .menuItem{
 }
 nav .menuItem.active, 
 nav .menuItem:hover{
-    border-bottom-color: #c58db7;
-    opacity: 90%;
+    border-bottom-color: #55667F;
 }
 
 nav .menuItem.active, 
 nav .menuItem:hover{
     /* background-color: #555; */
-    border-left-color: #c58db7;
-    opacity: 90%;
+    border-left-color: #55667F;
     color: black;
 }
 

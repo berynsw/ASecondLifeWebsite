@@ -6,7 +6,7 @@
         <!-- unique link sends current upcycle selected in dropdown to the upcycle template! -->
         <ejs-dropdownlist 
           class="dropdown"
-          :dataSource='upcycles' 
+          :dataSource='data' 
           :fields='fields'
           placeholder='Select a glass upcycle'
           v-model='routeName'
@@ -25,9 +25,11 @@
 
   export default Vue.extend({
     name: 'GlassDD',
+    props: {
+      data: []
+    },
     data () {
       return {
-        upcycles: [],
         fields : { text: 'upcycleName', value: 'upcycleName'},
         routeName: null,
         var1: false
@@ -36,16 +38,8 @@
     methods: {
       enableCreateButton: function(){
         this.var1 = true;
-      }
+      },
     },
-    mounted(){
-      fetch('http://localhost:3000/upcycles')
-        .then(response => response.json())
-        .then(data => {
-          this.upcycles = data.filter(d => d.category == "Glass");
-        })
-        .catch(err => console.log(err.message))
-    }
   });
 
 </script>
@@ -90,6 +84,5 @@
 .linkButton:hover{
     background-color: #48596C;
     border-color: #c58db7;
-    opacity: 90%;
 }
 </style>

@@ -7,6 +7,7 @@ import Homepage from './components/Homepage.vue';
 import NewUserGuide from './components/NewUserGuide.vue';
 import Contact from './components/Contact.vue';
 import Explore from './components/Explore.vue';
+import Writeup from './components/Writeup.vue';
 
 //upcycles
 import UpcycleTemplate from './components/UpcycleTemplate.vue';
@@ -21,14 +22,12 @@ const routes = [
   {path: '/newuserguide', component: NewUserGuide},
   {path: '/contact', component: Contact},
   {path: '/explore', component: Explore},
+  {path: '/writeup', component: Writeup},
   
   
 
   //upcycles
-  {
-    path: '/:name', 
-    component: UpcycleTemplate
-  }
+  {path: '/:name', component: UpcycleTemplate}
 
 ]
 const router = new VueRouter({
