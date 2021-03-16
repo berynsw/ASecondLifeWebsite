@@ -99,7 +99,8 @@ main .rightBox{
     height: 350px;
     float: right;
     margin-left: 55%;
-    background-color: #FAF2EC;
+    background-color:white;
+    border-radius: 70px 20px;
     position: relative;
     box-shadow: 20px 20px #888888;
     text-align: center;
@@ -124,7 +125,7 @@ main .boxButton{
     margin-top: 45%;
     margin-left: auto;
     margin-right: auto;
-    background-color:#FAF2EC;
+    background-color:white;
     border: 3px solid gray;
     color:gray;
     text-align: center;
