@@ -73,21 +73,21 @@
             <br>
             <p>
                 <span class="question">
-                    Explain your systematic literature review. How many papers did you read? Write a summary of your findings.
+                    Explain your systematic literature review. How many papers did you read? Write a summary of your findings:
                 </span>
 
             </p>
             <br>
             <p>
                 <span class="question">
-                    Explain your system analysis. How many systems did you analyze? Write a summary of your findings.
+                    Explain your system analysis. How many systems did you analyze? Write a summary of your findings:
                 </span>
                 
             </p>
             <br>
             <p>
                 <span class="question">
-                    Explain your user study. How many interviews did you conduct? Write a summary of your findings.
+                    Explain your user study. How many interviews did you conduct? Write a summary of your findings:
                 </span>
                 
             </p>
