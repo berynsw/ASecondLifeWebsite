@@ -4,17 +4,7 @@
         <main>
             <div class="UpofWeek">Upcycles of the Week</div>
         </main>
-        <carousel
-            @next="next"
-            @prev="prev"
-        >
-            <carousel-slide v-for="(slide,index) in slides"
-                 :key="slide"
-                 :index="index"
-                 :visibleSlide="visibleSlide">
-                <img :src="slide" />
-            </carousel-slide>
-        </carousel>
+        <Carousel />
         <div class="newUserSection">
             <img :src="require(`@/assets/boots.jpg`)" class="boots" width= '400' height= '500'>
             <div class="name">New to Upcycling?</div>
@@ -25,14 +15,9 @@
 </template>
 
 <script>
-
     import UpcycleSearch from './UpcycleSearch.vue';
-
     import Carousel from './Carousel.vue';
     export default {
-
-
-
         name: 'Homepage',
         components: {
             UpcycleSearch,
@@ -56,7 +41,6 @@ main .UpofWeek{
     height: 590px;
     padding: 50px 80px;
     background-color: #FAF2EC;
-    /* background-color:rgb(245, 245, 220);  */
     color: rgb(25, 28, 46);
     font-family: helvetica;
     position: relative;

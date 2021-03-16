@@ -25,10 +25,7 @@ const routes = [
   
 
   //upcycles
-  {
-    path: '/:name', 
-    component: UpcycleTemplate
-  }
+  {path: '/:name', component: UpcycleTemplate}
 
 ]
 const router = new VueRouter({

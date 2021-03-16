@@ -13,7 +13,9 @@
                 <div class="text">Plastic doesn't need to be thrown away. Let's reuse plastic in a new sustainable way!</div>
                 <img :src="require(`@/assets/plasticBottle.jpg`)" class="plastic" width= '600' height= '400'>
                 <div class="dropdown">
-                    <PlasticDD />
+                    <PlasticDD 
+                        :data="upcycles.filter(d => d.category == 'Plastic')"
+                    />
                 </div>
             </div>
             <br>
@@ -22,7 +24,9 @@
                 <div class="text">Have an old tin can laying around? Let's turn it into an awesome upcycle!</div>
                 <img :src="require(`@/assets/TinCan.jpeg`)" class="tinCan" width= '600' height= '400'>
                 <div class="dropdown">
-                    <TinDD />
+                    <TinDD 
+                        :data="upcycles.filter(d => d.category == 'Tin')"
+                    />
                 </div>
             </div>
             <br>
@@ -31,7 +35,9 @@
                 <div class="text">Not only can food waste be used in compost, it can also be reused in other ways! Learn more here.</div>
                 <img :src="require(`@/assets/foodWaste.jpg`)" class="foodWaste" width= '600' height= '400'>
                 <div class="dropdown">
-                    <FoodDD />
+                    <FoodDD 
+                        :data="upcycles.filter(d => d.category == 'Food')"
+                    />
                 </div>
             </div>
             <br>
@@ -40,7 +46,9 @@
                 <div class="text">Buy some pasta sauce lately? Lets reuse the jar!</div>
                 <img :src="require(`@/assets/Glass.jpg`)" class="glass" width= '600' height= '400'>
                 <div class="dropdown">
-                    <GlassDD />
+                    <GlassDD 
+                        :data="upcycles.filter(d => d.category == 'Glass')"
+                    />
                 </div>
             </div>
             <br>
@@ -49,7 +57,9 @@
                 <div class="text">Don't throw out those boxes after moving! Here's some ideas to make the most of your cardboard</div>
                 <img :src="require(`@/assets/cardboard.webp`)" class="cardboard" width= '600' height= '400'>
                 <div class="dropdown">
-                    <CardboardDD />
+                    <CardboardDD 
+                        :data="upcycles.filter(d => d.category == 'Cardboard')"
+                    />
                 </div>
             </div>
             <br>
@@ -73,6 +83,19 @@ export default {
         FoodDD,
         GlassDD,
         CardboardDD
+    },
+    data(){
+        return{
+            upcycles: []
+        }
+    },
+    mounted(){
+      fetch('http://localhost:5000/upcycles')
+        .then(response => response.json())
+        .then(data => {
+          this.upcycles = data;
+        })
+        .catch(err => console.log(err.message))
     }
 }
 </script>

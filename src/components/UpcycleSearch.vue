@@ -40,7 +40,7 @@ export default {
   position: absolute;
   top: 20%;
   left: 5%;
-  font-size: 10vw;
+  font-size: 9vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -69,7 +69,7 @@ main .boxButton{
     margin-left: auto;
     margin-right: auto;
     background-color:#55667F;
-    border: 5px solid transparent;
+    border: .6vh solid transparent;
     color:white;
     text-align: center;
     text-decoration: none;
@@ -83,7 +83,7 @@ main .boxButton{
 main .boxButton.active, 
 main .boxButton:hover{
 
-    border-color: #3a4557;
+    border-bottom-color: #3a4557;
 }
 
 main .dropDown {

@@ -78,7 +78,7 @@ export default {
         }
     },
     mounted(){
-      fetch('http://localhost:3000/upcycles')
+      fetch('http://localhost:5000/upcycles')
         .then(response => response.json())
         .then(data => {
           this.upcycles = data;
@@ -96,7 +96,7 @@ export default {
     .carousel{
         position:relative;
         width:100vw;
-        height:27vw;
+        height:55vh;
         overflow:hidden;
         background-color: #a3ceae;
         position: relative;
@@ -164,7 +164,6 @@ export default {
         max-width: 12.86vw;
         max-height: 42.86vh;
         border: .25vw solid #48596C;
-
         display: table cell;
         margin: 0 auto;
         margin-top: 1.14vh;

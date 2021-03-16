@@ -40,7 +40,7 @@ export default {
         }
     },
     mounted(){
-        fetch('http://localhost:3000/upcycles')
+        fetch('http://localhost:5000/upcycles')
         .then(response => response.json())
         .then(data => {
             data.forEach(d => {
