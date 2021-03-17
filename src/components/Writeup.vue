@@ -2,12 +2,15 @@
     <div class="main">
         <div class="column">
             <p class="title">
-                <span class="question">A Second Life</span>
+                <span class="question" id="header">A Second Life</span>
                 <br>
-                Katie Werner wernerk5@wwu.edu, Keili, Ashima, Beryn staubwb@wwu.edu
+                <br>
+                Katie Werner wernerk5@wwu.edu, Keili, Ashima, Beryn Staub-Waldenberg staubwb@wwu.edu
                 <br>
                 CSCI 436, Winter 2021, Dr. Shameem Ahmed
             </p>
+            <br>
+            
             <br>
             <p>
                 <span class="question">
@@ -149,8 +152,13 @@
     }
     .title{
         text-align: center;
+        font-size: 1.1vw;
+    }
+    #header{
+        font-size: 1.35vw;
     }
     .question{
-        font-weight: bold;     
+        font-weight: bold;
+        font-size: 1.2vw;     
     }
 </style>
