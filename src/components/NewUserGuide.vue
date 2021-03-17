@@ -28,10 +28,10 @@
                 </div>
                 <section>
                     <div class="section-left-img">
-                    <img :src="require(`@/assets/newuserguide3.jpeg`)" class="imgShadow" width= '700vw' height= '500vh'>
+                    <img :src="require(`@/assets/newuserguide3.jpeg`)" class="imgShadow" id="candle">
                     </div>
                     <div class="section-right-img">
-                    <img :src="require(`@/assets/newuserguide2.jpg`)" class="imgShadow" width= '500vw' height= '500vh'>
+                    <img :src="require(`@/assets/newuserguide2.jpg`)" class="imgShadow" id="lemon" >
                     </div>
                 </section>
 
@@ -48,12 +48,12 @@
                     </p>
                 </div>
                 <div class="section-right-img-two">
-                    <img :src="require(`@/assets/newuserguide1.jpg`)" class="imgShadow" width= '500vw' height= '500vh'>
+                    <img :src="require(`@/assets/newuserguide1.jpg`)" class="imgShadow" id="shelf">
                 </div>
             </section>
 
              <div class="headingBox-two">
-                    <h1>How To Get Started In Three Steps ?</h1>
+                    <h1>How to get started in 3 steps:</h1>
             </div>
             <div class="heading">
                 
@@ -81,6 +81,20 @@ export default {
 </script>
 
 <style scoped>
+
+
+#candle{
+    height: 46vh;
+    width: 33vw;
+}
+#lemon{
+    height: 46vh;
+    width: 21vw;
+}
+#shelf{
+    height: 46vh;
+    width: 23vw;
+}
 
 .background{
       background-image: url("../assets/newuserguidebackground.jpg");
@@ -114,7 +128,7 @@ export default {
 
 body{
     width: 100%;
-    height: 230vh;
+    height: 240vh;
     background-color: #FAF2EC;
     position: relative;
 }
@@ -128,6 +142,7 @@ body{
     font-size: 1.6vw;
 
     font-family: helvetica;
+
 }
 
 .headingBox{

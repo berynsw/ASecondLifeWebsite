@@ -6,7 +6,7 @@
         </main>
         <Carousel />
         <div class="newUserSection">
-            <img :src="require(`@/assets/boots.jpg`)" class="boots" width= '400' height= '500'>
+            <img :src="require(`@/assets/boots.jpg`)" class="boots">
             <div class="name">New to Upcycling?</div>
             <p class="text">Explore our mission and community. A Second Life is dedicated to reducing waste through simple upcycle projects. What's an upcycle? Don't know where to start? Learn more by clicking below.</p>
             <router-link class="NewUser" to="./newuserguide">New User Guide</router-link>
@@ -46,7 +46,7 @@ main .UpofWeek{
     position: relative;
 }
 body .name{
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-family: rockwell;
     color: #48596C;
     width: 40vw;
@@ -55,7 +55,7 @@ body .name{
     left: 7vw;
 }
 body .text{
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #48596C;
     width: 35vw;
     position: absolute;
@@ -69,6 +69,8 @@ body .boots{
     border-color:#48596C;
     top: 5vh;
     right: 10vw;
+    width: 15vw;
+    height: 44vh;
 }
 body .NewUser{
     width: 17vw;

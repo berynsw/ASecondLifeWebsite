@@ -52,7 +52,7 @@ main .rightBox{
     float: right;
     margin-left: 55%;
     background-color:white;
-    border-radius: 70px 20px;
+    border-radius: 5vh .6vw;
     position: relative;
     box-shadow: 1.3vw 1.3vw #888888;
     text-align: center;

@@ -44,14 +44,14 @@ main {
 
 }
 main .name{
-    font-size: 2.8vw;
+    font-size: 2.5vw;
     font-family: rockwell;
     display: table;
     margin: 0 auto;
 
 }
 main .text{
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     display: table;
     margin: 0 auto;
     padding-bottom: 2%;
@@ -62,7 +62,7 @@ main .email{
     border-radius: 25px;
     border-color: #3a4557;
     /* box-shadow: -1px -1px #777; */
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: helvetica;
     text-align: center;
     display: table;
@@ -78,7 +78,7 @@ main .idea{
     border-color: #3a4557;
     /* box-shadow: -1px -1px #777; */
 
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: helvetica;
     text-align: center;
 
@@ -93,7 +93,7 @@ main .submit{
     border: 5px solid transparent;
     color: white;
     background-color:#55667F;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     font-family: rockwell;
     line-height: 5vh;
 
