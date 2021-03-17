@@ -5,97 +5,97 @@
             "category"              :"Plastic",
             "itemName"              :"Water Bottle",
             "imageName"             :"dogTreatDispenser.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "environmentalImpact"   :"Plastic Bottles are estimated to take around 450 years to break down",
+            "supplies"              :"Plastic bottle, small dog treats or kibble",
+            "instructions"          :"Insert dog treats or kibble into empty plastic bottle. OPTION: Cut holes and hang on pole for a further challenge for your dog!"
         },
         {
             "upcycleName"           :"Mini-Trashbag Liner", 
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag",
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"grocery bag.jpg",
+            "environmentalImpact"   :"Plastic grocery bags are estimated to take more than 500 years to break down",
+            "supplies"              :"Mini trash can, grocery bag",
+            "instructions"          :"Use grocery bag as a trash bag liner. Great for offices and bedrooms!"
         },
         {
             "upcycleName"           :"Storage", 
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag",
             "imageName"             :"grocery bag.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "environmentalImpact"   :"Plastic grocery bags are estimated to take more than 500 years to break down",
+            "supplies"              :"Grocery Bag, miscelaneous items",
+            "instructions"          :"Use grocery bag to store various items, such as other grocery bags for upcycling later."
         },
         {
             "upcycleName"           :"Emergency Sick Bag",
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"grocery bag.jpg",
+            "environmentalImpact"   :"Plastic grocery bags are estimated to take more than 500 years to break down",
+            "supplies"              :"Plastic grocery bag, paper grocery bag",
+            "instructions"          :"Line the inside of the paper grocery bag with the plastic grocery bag. Make sure there are no holes in the plastic grocery bag. Flatten and store next to bed, or in car in case you feel sick!"
         },
         {
             "upcycleName"           :"Shoe Travel",
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"grocery bag.jpg",
+            "environmentalImpact"   :"Plastic grocery bags are estimated to take more than 500 years to break down",
+            "supplies"              :"plastic grocery bag, pair of shoes, suitcase/backpack",
+            "instructions"          :"Put shoes inside grocery bag in order to prevent possible dirt from shoes from getting on clothes inside luggage."
         },
         {
             "upcycleName"           :"Pet Waste Cleanup",
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"grocery bag.jpg",
+            "environmentalImpact"   :"Plastic grocery bags are estimated to take more than 500 years to break down",
+            "supplies"              :"Plastic Grocery bag",
+            "instructions"          :"Use a saved grocery bag to pick up waste when walking your dog, or double up on bags and use when cleaning out litter-box."
         },
         {
             "upcycleName"           :"Yarn for Crocheting",
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"grocery bag.jpg",
+            "environmentalImpact"   :"Plastic grocery bags are estimated to take more than 500 years to break down",
+            "supplies"              :"Plastic grocery bag, scissors",
+            "instructions"          :"Flatten bag on a flat surface, fold in half vertically (hot-dog style) twice, then cut horizontally 1-inch strips. Connect each plastic strip loops by knotting the ends together, and roll into a ball for future use."
         },
         {
             "upcycleName"           :"Mini Survival Kit",
             "category"              :"Plastic",
             "itemName"              :"Prescription Bottle", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"PBottle.png",
+            "environmentalImpact"   :"Plastic prescription bottles are estimated to take between 20 and 30 years to break down",
+            "supplies"              :"Prescription bottle, razor blade, fishing tackle, stormproof matches, dryer lint, bandaids",
+            "instructions"          :"Add items into empty prescription bottle and store in car or while camping."
         },
         {
             "upcycleName"           :"Plastic Grocery Bag Storage",
             "category"              :"Plastic",
             "itemName"              :"Clorox Wipes Container", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"clorox.jpg",
+            "environmentalImpact"   :"Thicker plastics are estimated to take 500-1000 years to break down in the environment",
+            "supplies"              :"Plastic grocery bags, empty clorox wipes container ",
+            "instructions"          :"roll grocery bags together (like paper towels) and place in container, pulling out one of the ends to stick out the top of the container."
         },
         {
             "upcycleName"           :"Mosaic Resin Tray",
             "category"              :"Plastic",
             "itemName"              :"CD/DVD", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"cdTray.jpg",
+            "environmentalImpact"   :"CDs and DVDs are estimated to take 10-30 years to break down",
+            "supplies"              :"CDs or DVDs, tray, hot glue gun, resin, strong scissors",
+            "instructions"          :"Cut CDs/DVDs in half. Gently pry apart the two layers with your fingers, then cut the halves into small pieces. Hot glue pieces down metallic side up onto the tray, then prepare and pour resin in tray. Cover and let sit. OPTION: Use heat gun to get rid of bubbles after 20 minutes"
         },
         {
             "upcycleName"           :"Bag Seal",
             "category"              :"Plastic",
             "itemName"              :"Twist Ties", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
+            "imageName"             :"twistTieBag.jpg",
+            "environmentalImpact"   :"100-500 years to break down",
             "supplies"              :"Twist ties and your bag of choice",
             "instructions"          :"Simply twist tie around the end of the bag."
         },
@@ -103,10 +103,10 @@
             "upcycleName"           :"Wire Organizer",
             "category"              :"Plastic",
             "itemName"              :"Twist Ties", 
-            "imageName"             :"boots.jpg",
-            "environmentalImpact"   :"Probably bad",
-            "supplies"              :"Old rubber boot(s), potting soil, small outdoor plant",
-            "instructions"          :"Wash out the boots before filling with just enough potting soil to leave room for the roots of your plant of choice."
+            "imageName"             :"twistTieWire.jpg",
+            "environmentalImpact"   :"100-500 years to break down",
+            "supplies"              :"Twist ties, various wires",
+            "instructions"          :"Use twist ties to wrap, hold together, and organize various wires."
         },
         {
             "upcycleName"           :"Cake Pan Succulent Garden",
