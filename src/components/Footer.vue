@@ -1,6 +1,10 @@
 <template>
     <main>
-        <div class="name">A Second Life</div>
+        <div class="namewrap">
+            <div class="name">
+                A Second Life
+            </div>
+        </div>
         <nav>
             <router-link class="menuItem" to="./">Home</router-link>
             <router-link class="menuItem" to="./explore">Explore</router-link>
@@ -20,49 +24,53 @@ export default {
 <style scoped>
 main{
     width: 100vw;
-    height: 300px;
-    padding: 50px 80px;
+    height: 26vh;
     background-color: #8db7c5;
-    border-top: 1px solid #A7CFB5;
-    position: relative;
+    display: table;
+    vertical-align: middle;
+    column-count: 2;
+    column-width: 2vw;
+    column-gap: 2vw;
+}
+.namewrap{
+    display: table-cell;
+    vertical-align: middle;
+
+    width: .2vw;
+
 }
 main .name{
-    font-size: 50pt;
+    font-size: 2.7vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 200px;
-    position: absolute;
-    top: 40px;
-    left: 50px;
+    width: .7vw;
+
+    display: flex;
+    margin-left: 2vw;
 }
 nav{
     width: 20vw;
-    padding: 0px 50px;
-    position: absolute;
-    top: 60px;
-    left: 300px;
+
     background-color: #8db7c5;
-    font-size: 18pt;
+    font-size: 1.1vw;
     font-family: helvetica;
-    justify-content: left;
+
+    display: table-cell;
+    vertical-align: middle;
+    
 }
 nav .menuItem{
-    padding: 5px 5px;
-    position: relative;
-    text-align: center;
-    border-left: 4px solid transparent;
+    padding: .4vh 5px;
+    border-left: .2vw solid transparent;
     display: flex;
     transition: 0.4s;
     color: white;
     text-decoration: none;
+
 }
-nav .menuItem.active, 
-nav .menuItem:hover{
-    border-bottom-color: #55667F;
-}
+
 
 nav .menuItem.active, 
 nav .menuItem:hover{
-    /* background-color: #555; */
     border-left-color: #55667F;
     color: black;
 }
