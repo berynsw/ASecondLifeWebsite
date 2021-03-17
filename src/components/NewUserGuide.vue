@@ -166,6 +166,8 @@ body{
 	width: 30%;
     margin-left: 9%;
 	
+    margin-left: 7%;
+	margin-right: 13%;
 	margin-top: -19px;
     display: flex;
      
