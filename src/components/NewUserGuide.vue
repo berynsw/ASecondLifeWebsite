@@ -124,7 +124,7 @@ body{
     text-align: center;
     width: 100%;
     padding: 5%;
-    font-size: 30px;
+    font-size: 1.7em;
     font-family: helvetica;
 }
 
@@ -134,7 +134,7 @@ body{
     background-color:#a3ceae;
     margin-left: 5%;
     margin-top: 560px;
-    font-size: 32px;
+    font-size: 1.5em;
     text-align: center;
     line-height: 122px;
     font-family: rockwell, bold;
@@ -145,7 +145,7 @@ body{
     background-color:#a3ceae;
     margin-left: 5%;
     margin-top: 690px;
-    font-size: 30px;
+    font-size: 1.5em;
     text-align: center;
     line-height: 122px;
     font-family: rockwell, bold;
@@ -164,8 +164,8 @@ body{
 .section-left-img {
 	float: left;
 	width: 30%;
-    margin-left: 9%;
-	
+    margin-left: 7%;
+	margin-right: 13%;
 	margin-top: -19px;
     display: flex;
      
