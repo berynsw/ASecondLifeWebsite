@@ -28,7 +28,7 @@
                 </div>
                 <section>
                     <div class="section-left-img">
-                    <img :src="require(`@/assets/newuserguide3.jpeg`)" class="imgShadow" width= '700' height= '500'>
+                    <img :src="require(`@/assets/newuserguide3.jpeg`)" class="imgShadow" width= '600' height= '500'>
                     </div>
                     <div class="section-right-img">
                     <img :src="require(`@/assets/newuserguide2.jpg`)" class="imgShadow" width= '500' height= '500'>
@@ -41,7 +41,7 @@
 
             <section>
                 <div class="section-left-text">
-                    <p class="text" style="font-size:34px;">Upcycling is the process of transforming waste, unwanted and used items
+                    <p class="text">Upcycling is the process of transforming waste, unwanted and used items
                         into a new product or material resulting in reduced amount of waste material that goes to
                         landfill. <br><br>Often times the transformed product has more environmental or artistic value then the 
                         original product did. 
@@ -124,7 +124,7 @@ body{
     text-align: center;
     width: 100%;
     padding: 5%;
-    font-size: 34px;
+    font-size: 30px;
     font-family: helvetica;
 }
 
@@ -134,7 +134,7 @@ body{
     background-color:#a3ceae;
     margin-left: 5%;
     margin-top: 560px;
-    font-size: 34px;
+    font-size: 32px;
     text-align: center;
     line-height: 122px;
     font-family: rockwell, bold;
@@ -145,7 +145,7 @@ body{
     background-color:#a3ceae;
     margin-left: 5%;
     margin-top: 690px;
-    font-size: 34px;
+    font-size: 30px;
     text-align: center;
     line-height: 122px;
     font-family: rockwell, bold;
@@ -163,28 +163,28 @@ body{
 }
 .section-left-img {
 	float: left;
-	/* width: 40%; */
+	width: 30%;
     margin-left: 9%;
-	padding: 15px;
-	margin-top: -5%;
+	
+	margin-top: -19px;
     display: flex;
      
 }
 .section-right-img {
 	float: right;
-	/* width: 40%; */
-	padding: 30px;
-	margin-top: -6%;
-    margin-right: 9%;
+	width: 30%;
+	
+	margin-top: -19px;
+    margin-right:13%;
     display: block;
      
 }
 .section-right-img-two {
 	float: right;
-	/* width: 40%; */
-	padding: 30px;
+	width: 30%;
+	
 	margin-top: 3%;
-    margin-right: 9%;
+    margin-right:13%;
     display: block;
      
 }
