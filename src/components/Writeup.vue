@@ -127,9 +127,9 @@
 </template>
 
 <script>
-export default {
-  name: 'Writeup',
-}
+    export default {
+    name: 'Writeup',
+    }
 </script>
 
 <style scoped>
