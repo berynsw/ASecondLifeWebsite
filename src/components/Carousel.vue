@@ -13,7 +13,7 @@
                     </div>
 
                     <div id="middle" class="slide">
-                        <router-link class="link" :to="`./${midUpcycle.upcycleName}`" target="_blank">
+                        <router-link class="link" :to="`./${midUpcycle.upcycleName}`">
                             <div>Item: {{midUpcycle.itemName}}<br>Upcycle: {{midUpcycle.upcycleName}}</div>
                             <img :src="require(`@/assets/${midUpcycle.imageName}`)">
                         </router-link>
