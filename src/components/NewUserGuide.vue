@@ -28,15 +28,15 @@
                 </div>
                 <section>
                     <div class="section-left-img">
-                    <img :src="require(`@/assets/newuserguide3.jpeg`)" class="imgShadow" width= '600' height= '500'>
+                    <img :src="require(`@/assets/newuserguide3.jpeg`)" class="imgShadow" width= '700vw' height= '500vh'>
                     </div>
                     <div class="section-right-img">
-                    <img :src="require(`@/assets/newuserguide2.jpg`)" class="imgShadow" width= '500' height= '500'>
+                    <img :src="require(`@/assets/newuserguide2.jpg`)" class="imgShadow" width= '500vw' height= '500vh'>
                     </div>
                 </section>
 
             <div class="headingBox">
-                    <h1>So What Is An Upcycle ?</h1>
+                    <h1>So, what is an upcycle?</h1>
             </div>
 
             <section>
@@ -48,7 +48,7 @@
                     </p>
                 </div>
                 <div class="section-right-img-two">
-                    <img :src="require(`@/assets/newuserguide1.jpg`)" class="imgShadow" width= '500' height= '500'>
+                    <img :src="require(`@/assets/newuserguide1.jpg`)" class="imgShadow" width= '500vw' height= '500vh'>
                 </div>
             </section>
 
@@ -97,24 +97,24 @@ export default {
   position: absolute;
   top: 20%;
   left: 5%;
-  font-size: 100pt;
+  font-size: 7vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .woodUpcycleHeading{
 
     width: 100%;
-    height: 120px;
+    height: 11vh;
     background-color:#8db7c5 ;
-    font-size: 60px;
+    font-size: 3.3vw;
     text-align: center;
-    line-height: 140px;
+    line-height: 11vh;
     font-family: rockwell, bold;
 }
 
 body{
     width: 100%;
-    height:2700px;
+    height: 230vh;
     background-color: #FAF2EC;
     position: relative;
 }
@@ -124,30 +124,30 @@ body{
     text-align: center;
     width: 100%;
     padding: 5%;
-    font-size: 30px;
+    font-size: 1.6vw;
     font-family: helvetica;
 }
 
 .headingBox{
     width: 90%;
-    height: 125px;
+    height: 11.8vh;
     background-color:#a3ceae;
     margin-left: 5%;
-    margin-top: 560px;
-    font-size: 32px;
+    margin-top: 52vh;
+    font-size: 1.5vw;
     text-align: center;
-    line-height: 122px;
+    line-height: 11.8vh;
     font-family: rockwell, bold;
 }
 .headingBox-two{
     width: 90%;
-    height: 125px;
+    height: 11.8vh;
     background-color:#a3ceae;
     margin-left: 5%;
-    margin-top: 690px;
-    font-size: 30px;
+    margin-top: 61vh;
+    font-size: 1.5vw;
     text-align: center;
-    line-height: 122px;
+    line-height: 11.8vh;
     font-family: rockwell, bold;
 }
 
@@ -155,9 +155,9 @@ body{
 	float: left;
 	width: 40%;
     margin-left: 11.5%;
-	padding: 30px;
-	margin-top: 50px;
-    font-size: 30px;
+	padding: 3vh;
+	margin-top: 3.7vh;
+    font-size: 1.5vw;
     text-align: justify;
     
 }
@@ -174,7 +174,7 @@ body{
 	float: right;
 	width: 30%;
 	
-	margin-top: -19px;
+	margin-top: -1.6vh;
     margin-right:13%;
     display: block;
      
@@ -194,13 +194,13 @@ body{
 	
 	width: 40%;
     margin-left: 12%;
-	padding: 15px;
-	margin-top: -652px;
+
+
      
 }
 
 .imgShadow{
-     box-shadow:0 20px 40px #292e477d;
+     box-shadow:0 2vh 2vw #292e477d;
 }
 .text{
       color:rgb(90, 103, 117);
