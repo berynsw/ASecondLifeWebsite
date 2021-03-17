@@ -1,8 +1,5 @@
 <template>
     <div>
-        <!-- <header>
-            <h1 class="name">A <br> Second <br> Life</h1>
-        </header> -->
         <div class="background">
          
           <div class="banner-content">
