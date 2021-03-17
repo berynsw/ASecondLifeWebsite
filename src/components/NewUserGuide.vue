@@ -124,7 +124,11 @@ body{
     text-align: center;
     width: 100%;
     padding: 5%;
+<<<<<<< HEAD
     font-size: 1.6vw;
+=======
+    font-size: 1.7em;
+>>>>>>> 339d73d605aafd2a06df73699193b0b8503f5277
     font-family: helvetica;
 }
 
@@ -133,8 +137,13 @@ body{
     height: 11.8vh;
     background-color:#a3ceae;
     margin-left: 5%;
+<<<<<<< HEAD
     margin-top: 52vh;
     font-size: 1.5vw;
+=======
+    margin-top: 560px;
+    font-size: 1.5em;
+>>>>>>> 339d73d605aafd2a06df73699193b0b8503f5277
     text-align: center;
     line-height: 11.8vh;
     font-family: rockwell, bold;
@@ -144,8 +153,13 @@ body{
     height: 11.8vh;
     background-color:#a3ceae;
     margin-left: 5%;
+<<<<<<< HEAD
     margin-top: 61vh;
     font-size: 1.5vw;
+=======
+    margin-top: 690px;
+    font-size: 1.5em;
+>>>>>>> 339d73d605aafd2a06df73699193b0b8503f5277
     text-align: center;
     line-height: 11.8vh;
     font-family: rockwell, bold;
@@ -164,8 +178,6 @@ body{
 .section-left-img {
 	float: left;
 	width: 30%;
-    margin-left: 9%;
-	
     margin-left: 7%;
 	margin-right: 13%;
 	margin-top: -19px;
