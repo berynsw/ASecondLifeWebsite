@@ -88,17 +88,18 @@ main .idea{
 }
 main .submit{
     width: 10%;
-    height: 10%;
+    height: 5.2vh;
     border-radius: 25px;
-    border: 5px solid transparent;
+    border: .8vh solid transparent;
     color: white;
     background-color:#55667F;
     font-size: 1.3vw;
     font-family: rockwell;
-    line-height: 5vh;
+    line-height: 2vh;
 
     display: table;
     margin: 0 auto;
+    vertical-align: middle;
 
     transition: 0.4s;
 }

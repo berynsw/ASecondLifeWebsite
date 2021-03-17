@@ -38,7 +38,7 @@ main .UpofWeek{
 }
 .newUserSection {
     width: 100vw;
-    height: 590px;
+    height: 55vh;
     padding: 50px 80px;
     background-color: #FAF2EC;
     color: rgb(25, 28, 46);
@@ -77,7 +77,7 @@ body .NewUser{
     height: 5vh;
     margin-bottom: 3vh;
     border-radius: 40px;
-    border: 5px solid transparent;
+    border: .8vh solid transparent;
     font-size: 1.4vw;
     font-family: rockwell;
     text-align: center;
