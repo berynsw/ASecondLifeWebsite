@@ -64,12 +64,15 @@ export default {
 
 #flower{
     height: 46vh;
+    width: 22vw;
 }
 #home{
     height: 55vh;
+    width: 22vw;
 }
 #bag{
     height: 46vh;
+    width: 22vw;
 }
 
 .background{
