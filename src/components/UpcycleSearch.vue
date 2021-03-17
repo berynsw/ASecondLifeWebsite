@@ -51,7 +51,8 @@ main .rightBox{
     height: 40vh;
     float: right;
     margin-left: 55%;
-    background-color: #FAF2EC;
+    background-color:white;
+    border-radius: 70px 20px;
     position: relative;
     box-shadow: 1.3vw 1.3vw #888888;
     text-align: center;
