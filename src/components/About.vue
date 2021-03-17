@@ -23,7 +23,7 @@
                     <p class="text">Our Mission is to educate, inspire, and encourage upcycling in order to take steps towards a more sustainable life, and a cleaner planet Earth.</p>
                 </div>
                 <div class="section-right-img">
-                    <img :src="require(`@/assets/flowers.jpeg`)" class="imgShadow" width= '500' height= '500'>
+                    <img :src="require(`@/assets/flowers.jpeg`)" class="imgShadow" id="flower" width= '500' height= '500'>
                 </div>
             </section>
             <section>
@@ -32,7 +32,7 @@
                     <p class="text">A Second Life upcycle website was dreamed up by Keili a student from Western Washington University. With the help of group mates Ashima, Beryn and Katie, A Seconf Life was brought to life, sharing ideas of upcycles and helping to educate the public on the importance of sustainability.</p>
                 </div>
                 <div class="section-left-img">
-                    <img :src="require(`@/assets/home.jpeg`)" class="imgShadow" width= '500' height= '600'>
+                    <img :src="require(`@/assets/home.jpeg`)" class="imgShadow" id="home" width= '500' height= '600'>
                 </div>
             </section>
              <section>
@@ -43,7 +43,7 @@
                     </p>
                 </div>
                 <div class="section-right-img">
-                    <img :src="require(`@/assets/bag.jpeg`)" class="imgShadow" width= '500' height= '500'>
+                    <img :src="require(`@/assets/bag.jpeg`)" class="imgShadow" id="bag" width= '500' height= '500'>
                 </div>
             </section>
              
@@ -62,6 +62,16 @@ export default {
 
 <style scoped>
 
+#flower{
+    height: 46vh;
+}
+#home{
+    height: 55vh;
+}
+#bag{
+    height: 46vh;
+}
+
 .background{
       background-image: url("../assets/Garden.jpeg");
      opacity: 0.9;
@@ -77,58 +87,35 @@ export default {
   position: absolute;
   top: 20%;
   left: 5%;
-  font-size: 100pt;
+  font-size: 5vw;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .woodUpcycleHeading{
 
     width: 100%;
-    height: 120px;
+    height: 12vh;
     background-color:#8db7c5 ;
-    font-size: 60px;
+    font-size: 2.6vw;
     text-align: center;
-    line-height: 140px;
+    line-height: 12vh;
     font-family: rockwell, bold;
 }
 
 body{
     width: 100%;
-    height:2000px;
+    height:160vh;
     background-color: #a3ceae;
     position: relative;
 }
-/* body .aboutCard{
-    
-    width: 550px;
-    height: 350px;
-     background-color: #FAF2EC;
-} */
 
-/* body .name{
-    font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white;
-    
-    position: absolute;
-    top: 15%;
-    left: 30%;
-}
-body .text{
-    font-size: 30px;
-    color: white;
-    width: 500px;
-    position: absolute;
-    top: 160px;
-    left: 100px;
-} */
 .section-left-text {
 	float: left;
 	width: 40%;
     margin-left: 11.5%;
-	padding: 30px;
-	margin-top: 50px;
-    font-size: 30px;
+	padding: 3vh;
+	margin-top: 4vh;
+    font-size: 1.3vw;
     text-align: justify;
     
 }
@@ -136,8 +123,8 @@ body .text{
 	float: left;
 	width: 40%;
     margin-left: 12%;
-	padding: 15px;
-	margin-top: -580px;
+	padding: 1vh;
+	margin-top: -55vh;
      
 }
 
@@ -146,16 +133,16 @@ body .text{
 	width: 40%;
     margin-left: 12%;
     margin-right: 5.5%;
-	padding: 30px;
-	margin-top: 17px;
-    font-size: 30px;
+	padding: 4vh;
+	margin-top: 3vh;
+    font-size: 1.3vw;
     text-align: justify;
 }
 .section-right-img {
 	float: right;
 	width: 40%;
-	padding: 30px;
-	margin-top: 50px;
+	padding: 3vh;
+	margin-top: 4.8vh;
     margin-right: 6%;
      
 }
@@ -164,13 +151,13 @@ body .text{
 	
 	width: 40%;
     margin-left: 12%;
-	padding: 15px;
-	margin-top: -652px;
+	padding: 2vh;
+
      
 }
 
 .imgShadow{
-     box-shadow:0 20px 40px #292e477d;
+     box-shadow:0 1.3vh 2.2vw #292e477d;
 }
 .text{
       color:rgb(90, 103, 117);
