@@ -265,7 +265,7 @@ With our project we are targeting to affect and benefit not just millions but bi
             <br>
             <br>
             <br>
-            <div class="section">Thanks you for checking out our site!</div>
+            <div class="section">Thanks for checking out our site!</div>
             <br>
 
             
