@@ -63,6 +63,18 @@
                 </div>
             </div>
             <br>
+            <br>
+            <div class='Acontainer'>
+                <div class="title">Aluminum</div>
+                <div class="text">Drink soda lately? Let's reuse the can!</div>
+                <img :src="require(`@/assets/sodaCan.jpg`)" class="soda" width= '400' height= '500'>
+                <div class="dropdown">
+                    <AluminumDD 
+                        :data="upcycles.filter(d => d.category == 'Aluminum')"
+                    />
+                </div>
+            </div>
+            <br>
         </div>
 
 
@@ -75,6 +87,7 @@ import TinDD from './TinDD.vue';
 import FoodDD from './FoodDD.vue';
 import GlassDD from './GlassDD.vue';
 import CardboardDD from './CardboardDD.vue';
+import AluminumDD from './AluminumDD.vue';
 export default {
     name: 'Explore',
     components: {
@@ -82,7 +95,8 @@ export default {
         TinDD,
         FoodDD,
         GlassDD,
-        CardboardDD
+        CardboardDD,
+        AluminumDD
     },
     data(){
         return{
@@ -173,6 +187,14 @@ div .Ccontainer{
     border-style: solid;
     border-color:#48596C;
 }
+div .Acontainer{
+    width: 1000vw;
+    height:600px;
+    background-color: #8dc59b;
+    position: relative;
+    border-style: solid;
+    border-color:#48596C;
+}
     body .title{
         font-size: 60px;
         font-family: rockwell;
@@ -224,6 +246,14 @@ div .Ccontainer{
     }
         body .cardboard{
         background-image: url("../assets/cardboard.webp");
+        border-style: solid;
+        border-color:#48596C;
+        position: absolute;
+        top: 50px;
+        left:600px;
+    }
+        body .soda{
+        background-image: url("../assets/sodaCan.jpg");
         border-style: solid;
         border-color:#48596C;
         position: absolute;

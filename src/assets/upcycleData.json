@@ -10,6 +10,15 @@
             "instructions"          :"Insert dog treats or kibble into empty plastic bottle. OPTION: Cut holes and hang on pole for a further challenge for your dog!"
         },
         {
+            "upcycleName"           :"BirdFeeder",
+            "category"              :"Plastic",
+            "itemName"              :"Water Bottle",
+            "imageName"             :"birdFeeder.jpg",
+            "environmentalImpact"   :"Plastic Bottles are estimated to take around 450 years to break down",
+            "supplies"              :"Plastic bottle, bird food, scissors, 2 wooden spoons, string",
+            "instructions"          :"cut 4 holes to stick 2 wooden spoons through, with the holes a little bit wider than the spoons to let out bird seed. Fill bottle with bird seed. Tie string around top of bottle and hang outside. "
+        },
+        {
             "upcycleName"           :"Mini-Trashbag Liner", 
             "category"              :"Plastic",
             "itemName"              :"Grocery Bag",
@@ -109,15 +118,176 @@
             "instructions"          :"Use twist ties to wrap, hold together, and organize various wires."
         },
         {
+            "upcycleName"           :"Ornament Hanger",
+            "category"              :"Plastic",
+            "itemName"              :"Twist Ties", 
+            "imageName"             :"ornament.jpg",
+            "environmentalImpact"   :"100-500 years to break down",
+            "supplies"              :"Twist tie, ornament",
+            "instructions"          :"fish twist tie through ornament loop and twist to make new string for ornament."
+        },
+        {
             "upcycleName"           :"Cake Pan Succulent Garden",
             "category"              :"Tin",
             "itemName"              :"Cake Pan", 
             "imageName"             :"cakePanSucculentGarden.jpg",
-            "environmentalImpact"   :"Probably bad",
+            "environmentalImpact"   :"Around 50 years to break down",
             "supplies"              :"Old tin cakepan and your favorite small succulent plants",
             "instructions"          :"Fill cake pan with soil and plant succulents inside."
+        },
+        {
+            "upcycleName"           :"Tin Can Grill",
+            "category"              :"Tin",
+            "itemName"              :"Tin can", 
+            "imageName"             :"grill.jpg",
+            "environmentalImpact"   :"Around 50 years to break down",
+            "supplies"              :"#10-size tin can, tin snips, safety gloves, aluminum foil, charcoal, grilling rack",
+            "instructions"          :"Beginning at the open end of the can, cut 2-inch-wide parallel slits down the side, to about 3 inches from the bottom, repeating around the can. Bend the strips away from the center of the can to form a low basketlike container. Fill the bottom of the can with dirt. Cover the dirt and strips with heavy duty aluminum foil. You have now created an improvised tin can grill. Place the charcoal on top of the foil and lay the grilling rack on top of the metal strips. It is important to keep the distance between the grilling rack and the charcoal at about 3 to 4 inches (Bend the strips to this distance.)"
+        },
+        {
+            "upcycleName"           :"Pencil Holder",
+            "category"              :"Tin",
+            "itemName"              :"Tin can", 
+            "imageName"             :"pencilHolder.jpg",
+            "environmentalImpact"   :"Around 50 years to break down",
+            "supplies"              :"Tin can, pencils or pens, etc",
+            "instructions"          :"Use tin can to hold pens or pencils on your desk"
+        },
+        {
+            "upcycleName"           :"Planter",
+            "category"              :"Tin",
+            "itemName"              :"Tin can", 
+            "imageName"             :"tinCanPlanter.jpg",
+            "environmentalImpact"   :"Around 50 years to break down",
+            "supplies"              :"Tin can, hammer, nail, soil mix, plant of choice",
+            "instructions"          :"Use nail and hammer to poke 3-4 drainage holes in bottom of can, pot plant as desired"
+        },
+        {
+            "upcycleName"           :"Food Storage",
+            "category"              :"Glass",
+            "itemName"              :"Mason Jar", 
+            "imageName"             :"jar.jpg",
+            "environmentalImpact"   :"Glass is estimated to take around 1 Million years to break down, and does not biodegrade",
+            "supplies"              :"Mason Jar, food",
+            "instructions"          :"Store food in mason jar"
+        },
+        {
+            "upcycleName"           :"Miscelaneous Storage",
+            "category"              :"Glass",
+            "itemName"              :"Mason Jar", 
+            "imageName"             :"jarStorage.jpg",
+            "environmentalImpact"   :"Glass is estimated to take around 1 Million years to break down, and does not biodegrade",
+            "supplies"              :"Mason Jar, Miscelaneous items",
+            "instructions"          :"Use mason jar to organize and store various items"
+        },
+        {
+            "upcycleName"           :"Miscelaneous Storage",
+            "category"              :"Glass",
+            "itemName"              :"Candle Jar", 
+            "imageName"             :"candle-jar-storage.jpg",
+            "environmentalImpact"   :"Glass is estimated to take around 1 Million years to break down, and does not biodegrade",
+            "supplies"              :"Candle Jar, Miscelaneous items",
+            "instructions"          :"Use candle jar to organize and store various items"
+        },
+        {
+            "upcycleName"           :"Celery propogater",
+            "category"              :"Glass",
+            "itemName"              :"Candle Jar", 
+            "imageName"             :"celery.jpg",
+            "environmentalImpact"   :"Glass is estimated to take around 1 Million years to break down, and does not biodegrade",
+            "supplies"              :"end of celery head or end of green onions, candle jar",
+            "instructions"          :"fill jar half way with water, place end of celery stock in water, watch new celery sprout from the top!"
+        },
+        {
+            "upcycleName"           :"Candle (camping)",
+            "category"              :"Food",
+            "itemName"              :"Orange Peels", 
+            "imageName"             :"orangeCandle.jpg",
+            "environmentalImpact"   :"Orange Peels take around 6 months to biodegrade",
+            "supplies"              :"Half an orange peel (with middle inner stem intact), standard kitchen oil",
+            "instructions"          :"Fill the cavity with any type of kitchen oil such as vegetable oil or olive oil just below the center stem like a wick. Lokght the center stem-like wick."
+        },
+        {
+            "upcycleName"           :"Compost addition",
+            "category"              :"Food",
+            "itemName"              :"Vegetable/fruit scraps", 
+            "imageName"             :"compost.jpg",
+            "environmentalImpact"   :"Orange Peels take around 6 months to biodegrade",
+            "supplies"              :"Orange peels, compost bin",
+            "instructions"          :"Add orange peels to compost bin"
+        },
+        {
+            "upcycleName"           :"Plant Fertilizer",
+            "category"              :"Food",
+            "itemName"              :"Banana Peels", 
+            "imageName"             :"banana.jpg",
+            "environmentalImpact"   :"Banana Peels take around 2 years to biodegrade",
+            "supplies"              :"Banana peels, water, sealable jar",
+            "instructions"          :"Let banana peels sit in water in a sealed jar for two days and then use the water as plant fertilizer."
+        },
+        {
+            "upcycleName"           :"Celery propogater",
+            "category"              :"Food",
+            "itemName"              :"Celery end", 
+            "imageName"             :"celery.jpg",
+            "environmentalImpact"   :"Celery takes 40-60 days to biodegrade",
+            "supplies"              :"end of celery head or end of green onions, glass jar",
+            "instructions"          :"fill jar half way with water, place end of celery stock in water, watch new celery sprout from the top!"
+        },
+        {
+            "upcycleName"           :"Vegetable broth",
+            "category"              :"Food",
+            "itemName"              :"Vegetable Scraps", 
+            "imageName"             :"broth.jpg",
+            "environmentalImpact"   :"Vegetable scraps take 40-60 days to biodegrade",
+            "supplies"              :"Vegetable scraps, freezer-safe bag, freezer, pot, water (1qt water for every 2 cups scraps), olive oil",
+            "instructions"          :"Collect scraps periodically and store in the freezer. Saute for a few minutes with olive oil. Bring to a boil and simmer for 30 minutes to an hour. Avoid potato scraps to prevent gummy texture, avoid red cabbage or red onion skins to avoid the stock being dyed red; Add herbs and spices for more flavor."
+        },
+        {
+            "upcycleName"           :"Moving boxes",
+            "category"              :"Cardboard",
+            "itemName"              :"Cardboard box", 
+            "imageName"             :"cardboard.jpg",
+            "environmentalImpact"   :"Cardboard takes about 5 years to break down",
+            "supplies"              :"Cardboard box, stuff to pack and move",
+            "instructions"          :"Save cardboard boxes to use in the future for your next move!"
+        },
+        {
+            "upcycleName"           :"Storage boxes",
+            "category"              :"Cardboard",
+            "itemName"              :"Cardboard box", 
+            "imageName"             :"cardboard.jpg",
+            "environmentalImpact"   :"Cardboard takes about 5 years to break down",
+            "supplies"              :"Cardboard box, stuff to store",
+            "instructions"          :"Save cardboard boxes to use in the future for storage!"
+        },
+        {
+            "upcycleName"           :"Mailing boxes",
+            "category"              :"Cardboard",
+            "itemName"              :"Cardboard box", 
+            "imageName"             :"cardboard.jpg",
+            "environmentalImpact"   :"Cardboard takes about 5 years to break down",
+            "supplies"              :"Cardboard box, stuff to pack and move",
+            "instructions"          :"Save cardboard boxes to use in the future for mailing items!"
+        },
+        {
+            "upcycleName"           :"Planter",
+            "category"              :"Aluminum",
+            "itemName"              :"Soda Can",
+            "imageName"             :"sodaPlanter.jpg",
+            "environmentalImpact"   :"An aluminum soda can takes around 140 years to break down",
+            "supplies"              :"Empty soda can, soil, plant, nail",
+            "instructions"          :"Use nail to poke 3 or 4 drainage holes in the bottom of the can. Pot plant with soil"
+        },
+        {
+            "upcycleName"           :"Fishing hook",
+            "category"              :"Aluminum",
+            "itemName"              :"Soda Can",
+            "imageName"             :"fishHook.jpg",
+            "environmentalImpact"   :"An aluminum soda can takes around 140 years to break down",
+            "supplies"              :"Soda can tab, strong scissors",
+            "instructions"          :"Remove tab from can, cut along lines in picture. Twist and fold loop backwards."
         }
-        
     ]
 }
 
